@@ -270,7 +270,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 a, button {
     color: rgb(139, 0, 0);
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover, button:hover {
@@ -279,22 +279,53 @@ a:hover, button:hover {
 
 h1 { 
     color: rgb(235, 205, 56)!important;
-    font-family: "Noticia Text", trebuchet, serif;
+    font-family: "Museo 700", trebuchet, serif;
     font-size: 49px;
     font-weight: 700;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 70px;
     letter-spacing: 1px;
+    line-height: 55px;
 }
 
 h1 a {
     color: rgb(235, 205, 56)!important;
+    text-decoration: none!important;
 }
 
-p, ul, h2, h3 {
-    font-family: verdana, sans-serif;
-    font-size: 17px;
-    line-height: 25px;
+.navbar { 
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.navbar a { 
+  padding: 4px 16px;
+  font-size: 19px;
+  text-decoration: none!important;
+  font-weight: 700
+
+}
+
+@media (max-width:600px) {
+  h1 {
+    font-size:30px!important;
+    padding-top: 30px!important;
+  }
+  .navbar { 
+    padding-top: 0px!important;
+    padding-bottom: 20px!important;
+  }
+  .navbar a {
+    font-size: 19px!important;
+  }
+}
+
+p, ul, h2, h3, html, body {
+    font-family: "Nunito Sans", verdana, sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 26px;
     color: rgb(77, 77, 77);
 }
 
@@ -306,7 +337,6 @@ h2 {
 h3 { 
     font-size: 20px!important;
 }
-
 
 .clips ul { 
   list-style-position: inside;
@@ -330,39 +360,7 @@ h3 {
     color: rgb(77, 77, 77)!important;
 }
 
-.noticia-text-regular {
-  font-family: "Noticia Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.noticia-text-bold {
-  font-family: "Noticia Text", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.noticia-text-regular-italic {
-  font-family: "Noticia Text", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.noticia-text-bold-italic {
-  font-family: "Noticia Text", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.navbar { 
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.navbar a { 
-  padding: 4px 16px;
-  font-size: 18px;
-}
 
 button {
   border-style: none!important;
@@ -373,4 +371,39 @@ button {
   width: 20px;
   height: auto;
   margin: 3px 4px;
+}
+
+
+@font-face {
+    font-family: 'Museo 300';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Museo 300'), url('fonts/Museo300-Regular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Museo 700';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Museo 700'), url('fonts/Museo700-Regular.woff') format('woff');
+}
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 1000;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 1000;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }

@@ -5,7 +5,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-12",
         "link" : "https://www.vox.com/future-perfect/391795/ultra-processed-foods-science-vegan-meat-rfk-maha",
-        "tags" : "animals, meat, health, science, featured, policy"
+        "tags" : "meat-less, health, science, featured, politics & policy"
     }, 
     {
         "hed" : "8 million turkeys will be thrown in the trash this Thanksgiving",
@@ -13,7 +13,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-11",
         "link" : "https://www.vox.com/future-perfect/388106/thanksgiving-turkey-food-waste-sides-dry-bland",
-        "tags" : "animals, meat, environment, culture"
+        "tags" : "meat-less, environment, culture"
     }, 
     {
         "hed" : "Starbucks won’t charge extra for plant-based milk. Other companies should follow.",
@@ -21,7 +21,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-11",
         "link" : "https://www.vox.com/future-perfect/381551/starbucks-dropping-plant-milk-upcharge-vegan-tax",
-        "tags" : "animals, veganism, environment"
+        "tags" : "meat-less, environment"
     }, 
     {
         "hed" : "These California and Colorado ballot measures are terrifying the meat industry",
@@ -29,7 +29,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-10",
         "link" : "https://www.vox.com/future-perfect/377096/sonoma-county-denver-factory-farming-slaughterhouse-ban-ballot-measures",
-        "tags" : "animals, activism, meat, policy"
+        "tags" : "ffaar, activism, politics & policy"
     }, 
     {
         "hed" : "How Factory Farming Ends",
@@ -37,7 +37,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-08",
         "link" : "https://www.vox.com/future-perfect/364288/how-factory-farming-ends-animal-rights-vegans-climate-ethics",
-        "tags" : "animals, meat, ideas, activism"
+        "tags" : "ffaar, ideas, activism"
     }, 
     {
         "hed" : "Humanity is failing one of its greatest moral tests",
@@ -45,7 +45,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-08",
         "link" : "https://www.vox.com/future-perfect/363550/factory-farming-human-progress-sustainable-food-movement",
-        "tags" : "animals, meat, ideas, activism"
+        "tags" : "ffaar, ideas, activism"
     }, 
     {
         "hed" : "Republicans want to put pigs back in tiny cages. Again.",
@@ -53,7 +53,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-06",
         "link" : "https://www.vox.com/future-perfect/353393/farm-bill-republicans-prop-12-gestation-crates-pork",
-        "tags" : "animals, meat, policy"
+        "tags" : "ffaar,  politics & policy"
     }, 
     {
         "hed" : "I gave up meat and gained so much more",
@@ -61,7 +61,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/climate/24131229/vegan-vegetarian-meatless-climate-solutions-recipes-connection",
-        "tags" : "animals, veganism, ideas, culture, featured"
+        "tags" : "meat-less, ideas, culture, featured"
     }, 
     {
         "hed" : "The dairy industry really, really doesn’t want you to say “bird flu in cows”",
@@ -69,7 +69,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/future-perfect/24128700/bird-fludairy-meat-industry-h5n1-cows-milk-eggs-safety",
-        "tags" : "animals, health, meat, science"
+        "tags" : "ffaar, health, science"
     },     
     {
         "hed" : "Mega drive-throughs explain everything wrong with American cities",
@@ -77,7 +77,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/the-highlight/24089853/mega-drive-throughs-cities-chick-fil-a-chipotle",
-        "tags" : "cars, cities, culture"
+        "tags" : "(car) culture"
     },     
     {
         "hed" : "9 charts that show US factory farming is even bigger than you realize",
@@ -85,7 +85,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-02",
         "link" : "https://www.vox.com/future-perfect/24079424/factory-farming-facts-meat-usda-agriculture-census",
-        "tags" : "animals, meat, environment, policy"
+        "tags" : "ffaar, environment, politics & policy"
     },      
     {
         "hed" : "The greenwashing of wool, explained",
@@ -93,7 +93,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-12",
         "link" : "https://www.vox.com/future-perfect/24008053/wool-marketing-environment-sustainable-claims-sheep-animal-cruelty-fast-fashion",
-        "tags" : "animals, environment, culture"
+        "tags" : "ffaar, environment, culture"
     },          
     {
         "hed" : "Bird flu is surging again on poultry farms. The US is normalizing the cruelest mass killing method to stop it.",
@@ -101,7 +101,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-12",
         "link" : "https://www.vox.com/future-perfect/23963820/bird-flu-surge-us-ventilation-shutdown-veterinarians",
-        "tags" : "animals, meat, science, health"
+        "tags" : "ffaar, science, health"
     },      
     {
         "hed" : "You’re more likely to go to prison for exposing animal cruelty than for committing it",
@@ -109,7 +109,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-11",
         "link" : "https://www.vox.com/future-perfect/23952627/wayne-hsiung-conviction-direct-action-everywhere-dxe-rescue-sonoma-county-chickens",
-        "tags" : "animals, activism, meat"
+        "tags" : "ffaar, activism, meat"
     },      
     {
         "hed" : "How cars ruin wild animals’ lives",
@@ -117,7 +117,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-09",
         "link" : "https://www.vox.com/future-perfect/23868483/cars-roads-roadkill-crossing-goldfarb-national-parks",
-        "tags" : "animals, cars, environment, books"
+        "tags" : "ffaar, (car) culture, environment, books"
     },              
     {
         "hed" : "What if AI treats humans the way we treat animals?",
@@ -125,7 +125,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/the-highlight/23777171/ai-animals-rights-cruelty-transhumanism-bostrom",
-        "tags" : "animals, ideas, books, featured"
+        "tags" : "ffaar, ideas, books, featured"
     },        
     {
         "hed" : "America has the world’s safest air travel but sucks so bad at car safety",
@@ -133,7 +133,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/future-perfect/2023/8/25/23844717/america-safe-air-travel-car-safety-accidents",
-        "tags" : "cars, cities, policy, ideas"
+        "tags" : "(car) culture, cities, politics & policy, ideas"
     },   
     {
         "hed" : "Undercover audio of a Tyson employee reveals “free-range” chicken is meaningless",
@@ -141,7 +141,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/future-perfect/23724740/tyson-chicken-free-range-humanewashing-investigation-animal-cruelty",
-        "tags" : "animals, meat, activism"
+        "tags" : "ffaar, activism"
     },   
     {
         "hed" : "What’s worse than a cruel animal experiment? A cruel and fake animal experiment.",
@@ -149,7 +149,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-07",
         "link" : "https://www.vox.com/future-perfect/2023/7/14/23794186/animal-testing-experiments-vivisection-academic-fraud-dishonesty-research",
-        "tags" : "animals, science, policy, ideas"
+        "tags" : "ffaar, science, politics & policy, ideas"
     },   
     {
         "hed" : "A fire killed 18,000 cows in Texas. It’s a horrifyingly normal disaster.",
@@ -157,7 +157,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-04",
         "link" : "https://www.vox.com/future-perfect/23683141/texas-farm-fire-explosion-dimmitt-cows-factory-dairy",
-        "tags" : "animals, science, policy, ideas"
+        "tags" : "ffaar, science, politics & policy, ideas"
     },      
     {
         "hed" : "The bitter civil war dividing American veterinarians",
@@ -165,7 +165,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-01",
         "link" : "https://www.vox.com/future-perfect/23516639/veterinarians-avma-factory-farming-ventilation-shutdown",
-        "tags" : "animals, meat, featured"
+        "tags" : "ffaar, featured"
     }, 
     {
         "hed" : "The fight against factory farming is winning criminal trials",
@@ -173,7 +173,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-03",
         "link" : "https://www.vox.com/future-perfect/23647682/factory-farming-dxe-criminal-trial-rescue",
-        "tags" : "animals, meat, activism"
+        "tags" : "ffaar, activism"
     }, 
     {
         "hed" : "Eggs are expensive for all the wrong reasons",
@@ -181,7 +181,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-02",
         "link" : "https://www.vox.com/future-perfect/23588340/egg-prices-expensive-bird-flu-shortage-price-gouging",
-        "tags" : "animals, meat"
+        "tags" : "meat-less"
     }, 
     {
         "hed" : "Activists Acquitted in Trial for Taking Piglets from Smithfield Foods",
@@ -189,7 +189,7 @@ clips = [
         "outlet": "The Intercept",
         "date" : "2022-10",
         "link" : "https://theintercept.com/2022/10/08/smithfield-animal-rights-piglets-trial/",
-        "tags" : "animals, meat, activism"
+        "tags" : "ffaar, activism"
     }, 
     {
         "hed" : "Amid Bird Flu Outbreak, Meat Producers Seek “Ventilation Shutdown” for Mass Chicken Killing",
@@ -197,7 +197,7 @@ clips = [
         "outlet": "The Intercept",
         "date" : "2022-04",
         "link" : "https://theintercept.com/2022/04/14/killing-chickens-bird-flu-vsd/",
-        "tags" : "animals, meat, science",
+        "tags" : "ffaar, science",
     },     
     {
         "hed" : "Cory Booker has a plan to stop taxpayer bailouts of Big Meat",
@@ -205,7 +205,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2022-11",
         "link" : "https://theintercept.com/2022/04/14/killing-chickens-bird-flu-vsd/",
-        "tags" : "animals, meat, policy"
+        "tags" : "ffaar, politics & policy"
     },       
     {
         "hed" : "An animal rights activist was in court on criminal charges. Why was the case suddenly dismissed?",
@@ -213,7 +213,7 @@ clips = [
         "outlet": "The Guardian",
         "date" : "2022-01",
         "link" : "https://www.theguardian.com/world/2022/jan/22/an-animal-rights-activist-was-in-court-on-criminal-charges-why-was-the-case-suddenly-dismissed",
-        "tags" : "animals, meat, activism"
+        "tags" : "ffaar, activism"
     },       
     {
         "hed" : "U.S. farms lobby to use “cruelest” kill method as bird flu rages",
@@ -221,7 +221,7 @@ clips = [
         "outlet": "The Guardian",
         "date" : "2022-11",
         "link" : "https://www.theguardian.com/environment/2022/nov/09/us-farms-lobby-to-use-cruellest-killing-method-as-bird-flu-rages",
-        "tags" : "animals, meat, policy, health"
+        "tags" : "ffaar, politics & policy, health"
     },      
     {
         "hed" : "U.S. Supreme Court to hear case on California's ban on extreme confinement crates",
@@ -229,7 +229,7 @@ clips = [
         "outlet": "The Guardian",
         "date" : "2022-10",
         "link" : "https://www.theguardian.com/environment/2022/oct/03/supreme-court-proposition-12-pig-gestation-crates-california-animal-welfare-law",
-        "tags" : "animals, meat, policy"
+        "tags" : "ffaar, politics & policy"
     },    
     {
         "hed" : "Utah Bill Seeks to Restrict Regulation of Animal Industries",
@@ -237,7 +237,7 @@ clips = [
         "outlet": "The Intercept",
         "date" : "2022-03",
         "link" : "https://theintercept.com/2022/03/02/utah-animal-industry-regulation-cafo-puppy-mills/",
-        "tags" : "animals, meat, policy"
+        "tags" : "ffaar, politics & policy"
     },    
     {
         "hed" : "Millions of birds culled in “the most inhumane way available”",
@@ -245,7 +245,7 @@ clips = [
         "outlet": "The Guardian",
         "date" : "2022-06",
         "link" : "https://www.theguardian.com/environment/2022/jun/06/us-bird-flu-outbreak-millions-of-birds-culled-in-most-inhumane-way-available",
-        "tags" : "animals, meat"
+        "tags" : "ffaar"
     },    
     {
         "hed" : "Will New York City’s foie gras ban make a difference?",
@@ -253,7 +253,7 @@ clips = [
         "outlet": "Grid",
         "date" : "2022-06",
         "link" : "files/grid-foie-gras.pdf",
-        "tags" : "animals, meat, policy"
+        "tags" : "ffaar, politics & policy"
     },  
     {
         "hed" : "“They're cooking them alive”: calls to ban cruel killing methods on US farms",
@@ -261,7 +261,7 @@ clips = [
         "outlet": "The Guardian",
         "date" : "2022-03",
         "link" : "https://www.theguardian.com/environment/2022/mar/08/theyre-cooking-them-alive-calls-to-ban-cruel-killing-methods-on-us-farms",
-        "tags" : "animals, meat, policy"
+        "tags" : "ffaar, politics & policy"
     },    
     {
         "hed" : "Why the anti-Factory Farming Movement Needs Direct Action",
@@ -269,7 +269,7 @@ clips = [
         "outlet": "Current Affairs",
         "date" : "2022-03",
         "link" : "https://www.currentaffairs.org/news/2022/03/why-the-anti-factory-farming-movement-needs-direct-action",
-        "tags" : "animals, activism, meat"
+        "tags" : "ffaar, activism, meat"
     },    
     {
         "hed" : "How U.S. dietary guidelines ignore the climate crisis",
@@ -277,7 +277,7 @@ clips = [
         "outlet": "The Guardian",
         "date" : "2022-08",
         "link" : "https://www.theguardian.com/environment/2022/aug/26/usda-diet-guide-myplate-climate-crisis",
-        "tags" : "animals, environment, meat, policy"
+        "tags" : "environment, meat-less, politics & policy"
     },   
     {
         "hed" : "“Forget They Are an Animal”",
@@ -285,7 +285,7 @@ clips = [
         "outlet": "Current Affairs",
         "date" : "2022-08",
         "link" : "https://www.currentaffairs.org/2022/08/forget-they-are-an-animal",
-        "tags" : "animals, meat"
+        "tags" : "ffaar, meat"
     },     
     {
         "hed" : "Five things to know about the SCOTUS challenge to California’s ban on extreme farm animal confinement",
@@ -293,7 +293,7 @@ clips = [
         "outlet": "The Counter",
         "date" : "2022-03",
         "link" : "https://thecounter.org/california-proposition-12-animal-welfare-supreme-court/",
-        "tags" : "animals, meat, policy"
+        "tags" : "ffaar, politics & policy"
     },     
     {
         "hed" : "What this Mother Jones story got wrong on primate testing",
@@ -301,7 +301,7 @@ clips = [
         "outlet": "Sentient Media",
         "date" : "2022-08",
         "link" : "https://sentientmedia.org/mother-jones-primate-testing-story/",
-        "tags" : "animals, science"
+        "tags" : "ffaar, science"
     },         
     {
         "hed" : "For These Wisconsin Farms, Animals Are Off the Table",
@@ -309,7 +309,7 @@ clips = [
         "outlet": "In These Times",
         "date" : "2021-12",
         "link" : "https://inthesetimes.com/article/rural-wisconsin-farm-sanctuary-animal-rights",
-        "tags" : "animals, activism"
+        "tags" : "ffaar, activism"
     },      
     {
         "hed" : "The Case Against the Concept of Invasive Species",
@@ -317,7 +317,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2021-11",
         "link" : "https://www.vox.com/down-to-earth/22796160/invasive-species-climate-change-range-shifting",
-        "tags" : "animals, environment, ideas"
+        "tags" : "ffaar, environment, ideas"
     },      
     {
         "hed" : "Animal Liberation Needs Animal Voices",
@@ -325,7 +325,7 @@ clips = [
         "outlet": "Tenderly",
         "date" : "2019-12",
         "link" : "https://medium.com/tenderlymag/animal-liberation-needs-animal-voices-eef6973ba777",
-        "tags" : "animals, activism, books, ideas"
+        "tags" : "ffaar, activism, books, ideas"
     },     
     {
         "hed" : "What Vegans With PCOS Actually Need to Know",
@@ -333,7 +333,7 @@ clips = [
         "outlet": "Tenderly",
         "date" : "2020-02",
         "link" : "https://medium.com/tenderlymag/what-vegans-with-pcos-actually-need-to-know-about-food-251388c66728",
-        "tags" : "veganism, health, science"
+        "tags" : "meat-less, health, science"
     },     
     {
         "topic" : "Jonathan Safran Foer's *We Are the Weather*",
@@ -341,7 +341,7 @@ clips = [
         "outlet": "Pittsburgh Post-Gazette",
         "date" : "2019-11",
         "link" : "https://www.post-gazette.com/ae/books/2019/11/17/Jonathan-Safran-Foer-We-Are-the-Weather-Saving-Planet-Begins-at-Breakfast/stories/201911170009",
-        "tags" : "animals, environment, meat, books, ideas"
+        "tags" : "ffaar, environment, books, ideas"
     },   
     {
         "topic" : "Jean-Baptiste Del Amo's *Animalia*",
@@ -349,21 +349,21 @@ clips = [
         "outlet": "Pittsburgh Post-Gazette",
         "date" : "2020-02",
         "link" : "https://www.post-gazette.com/ae/books/2020/02/09/Animalia-Jean-Baptiste-Del-Amo-factory-farms/stories/201911030003",
-        "tags" : "animals, meat, books, ideas"
+        "tags" : "ffaar, books, ideas"
     }, 
     {
         "topic" : "the extraordinary intelligence of crows.",
         "outlet": "Harvard Magazine",
         "date" : "2019-08",
         "link" : "https://www.harvardmagazine.com/2019/08/crows-know-how-to-have-fun",
-        "tags" : "animals, science"
+        "tags" : "ffaar, science"
     }, 
     {
         "topic" : "the joy of baby turkey season in Cambridge.",
         "outlet": "Harvard Magazine",
         "date" : "2019-06",
         "link" : "https://harvardmagazine.com/2019/06/baby-turkey-season-comes-to-harvard",
-        "tags" : "animals, science, cities"
+        "tags" : "science, (car) culture"
     }, 
     {
         "hed" : "A Graceful Place Where Bhangra and Bollywood Meet",
@@ -371,7 +371,7 @@ clips = [
         "outlet": "New York Times",
         "date" : "2021-06",
         "link" : "https://www.nytimes.com/2021/06/25/arts/dance/manpreet-toor-bhangra.html",
-        "tags" : "culture"
+        "tags" : "(car) culture"
     }, 
     {
         "hed" : "America’s car crash epidemic",
@@ -379,7 +379,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2021-09",
         "link" : "https://www.vox.com/22675358/us-car-deaths-year-traffic-covid-pandemic",
-        "tags" : "health, cities, cars"
+        "tags" : "health, cities, (car) culture"
     }, 
     {
         "hed" : "The Spiritual Bankruptcy of Bottled Water",
@@ -395,7 +395,7 @@ clips = [
         "outlet": "New York Times",
         "date" : "2021-03",
         "link" : "https://www.nytimes.com/2021/03/30/style/wedding-after-parties.html",
-        "tags" : "culture"
+        "tags" : "(car) culture"
     }, 
     {
          "hed" : "As the World Burns, Americans Buy Bigger Cars",
@@ -403,7 +403,7 @@ clips = [
          "outlet": "Vox",
          "date" : "2020-03",
          "link" : "https://www.vox.com/the-goods/2020/3/11/21152975/crossover-utility-vehicle-honda-cr-v-suv",
-         "tags" : "environment, cities, cars, culture"
+         "tags" : "environment, cities, (car) culture"
      },    
      {
          "hed" : "Curator of American Culture",
@@ -411,7 +411,7 @@ clips = [
          "outlet": "Harvard Magazine",
          "date" : "2021-03",
          "link" : "https://harvardmagazine.com/2021/03/alumni-radhika-jones",
-         "tags" : "culture, ideas"
+         "tags" : "(car) culture, ideas"
      },   
      {
          "hed" : "As Russian Jews, We Are Characters in Someone Else’s Story",
@@ -419,7 +419,7 @@ clips = [
          "outlet": "The Forward",
          "date" : "2019-07",
          "link" : "https://forward.com/life/428342/as-russian-jews-we-are-characters-in-someone-elses-story/",
-         "tags" : "culture, ideas"
+         "tags" : "(car) culture, ideas"
      },   
     {
         "hed" : "In the age of social media blasts, what’s the point of letters to the editor?",
@@ -434,7 +434,7 @@ clips = [
         "outlet": "Harvard Magazine",
         "date" : "2017-07",
         "link" : "https://www.harvardmagazine.com/2017/07/friends-from-college-netflix",
-        "tags" : "culture"
+        "tags" : "(car) culture"
     },
     {
         "hed" : "From Lews & Clark to Michael Brown",
@@ -544,7 +544,7 @@ clips = [
         "outlet": "Harvard Magazine",
         "date" : "2020-09",
         "link" : "https://harvardmagazine.com/2020/09/alumni-bharat-ramamurti",
-        "tags" : "policy"
+        "tags" : "politics & policy"
     },
     {
         "hed" : "ProMedica has a medical, moral duty to keep city's only abortion clinic open",
@@ -552,7 +552,7 @@ clips = [
         "outlet": "The Toledo Blade",
         "date" : "2015-08",
         "link" : "https://www.toledoblade.com/Marina-Bolotnikova/2015/08/02/ProMedica-has-medical-moral-duty-to-keep-city-s-only-abortion-clinic-open.html",
-        "tags" : "policy"
+        "tags" : "politics & policy"
     }  
 ]
 
