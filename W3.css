@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
@@ -378,7 +379,7 @@ button {
     font-family: 'Museo 300';
     font-style: normal;
     font-weight: normal;
-    src: local('Museo 300'), url('/fonts/Museo300-Regular.woff') format('woff');
+    src: local('Museo 300'), url('fonts/Museo300-Regular.woff') format('woff');
 }
     
 
@@ -386,7 +387,7 @@ button {
     font-family: 'Museo 700';
     font-style: normal;
     font-weight: normal;
-    src: local('Museo 700'), url('/fonts/Museo700-Regular.woff') format('woff');
+    src: local('Museo 700'), url('fonts/Museo700-Regular.woff') format('woff');
 }
 
 .roboto-<uniquifier> {
@@ -407,3 +408,5 @@ button {
     "wdth" 100,
     "YTLC" 500;
 }
+
+
