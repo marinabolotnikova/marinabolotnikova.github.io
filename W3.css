@@ -280,7 +280,7 @@ a:hover, button:hover {
 
 h1 { 
     color: rgb(235, 205, 56)!important;
-    font-family: "Museo 700", trebuchet, serif;
+    font-family: "Museo 700", Helvetica, sans-serif;
     font-size: 49px;
     font-weight: 700;
     text-align: center;
