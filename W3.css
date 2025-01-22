@@ -378,7 +378,7 @@ button {
     font-family: 'Museo 300';
     font-style: normal;
     font-weight: normal;
-    src: local('Museo 300'), url('fonts/Museo300-Regular.woff') format('woff');
+    src: local('Museo 300'), url('/fonts/Museo300-Regular.woff') format('woff');
 }
     
 
@@ -386,7 +386,7 @@ button {
     font-family: 'Museo 700';
     font-style: normal;
     font-weight: normal;
-    src: local('Museo 700'), url('fonts/Museo700-Regular.woff') format('woff');
+    src: local('Museo 700'), url('/fonts/Museo700-Regular.woff') format('woff');
 }
 
 .roboto-<uniquifier> {
