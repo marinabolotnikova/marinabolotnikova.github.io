@@ -204,7 +204,7 @@ clips = [
         "dek" : "A Vox exclusive by me and Kenny Torrella on a sweeping new meat industry reform package from Sen. Cory Booker.",
         "outlet": "Vox",
         "date" : "2022-11",
-        "link" : "https://theintercept.com/2022/04/14/killing-chickens-bird-flu-vsd/",
+        "link" : "https://www.vox.com/future-perfect/2022/11/22/23471771/cory-booker-meat-farming-industrial-agriculture-accountability-act",
         "tags" : "ffaar, politics & policy"
     },       
     {
