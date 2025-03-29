@@ -1,5 +1,13 @@
 clips = [
     {
+        "hed" : "Americans are drinking more cow’s milk. Here’s why that’s a problem.",
+        "dek" : "For years, dairy milk was plummeting. The vibe shift — and America’s protein obsession — is bringing it back.",
+        "outlet": "Vox",
+        "date" : "2024-3",
+        "link" : "https://www.vox.com/future-perfect/391795/ultra-processed-foods-science-vegan-meat-rfk-maha",
+        "tags" : "meat-less, politics & policy"
+    }, 
+    {
         "hed" : "You’re being lied to about “ultra-processed” foods",
         "dek" : "Coverage of the latest nutrition buzzword is overly broad, arbitrary, and wildly misleading. The problem goes deeper.",
         "outlet": "Vox",
