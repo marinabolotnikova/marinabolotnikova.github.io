@@ -1,10 +1,55 @@
+// current tags: politics & policy, (car) culture, ffaar, science, meat-less, environment, ideas, books
 clips = [
+    {
+        "hed" : "America’s fastest-growing suburbs are about to get very expensive",
+        "dek" : "Sprawl made suburbia affordable. Now it’s breaking it. Here’s what a new vision of the suburbs could look like.",
+        "outlet" : "Vox",
+        "date" : "2025-07",
+        "link" : "https://www.vox.com/future-perfect/417892/suburbs-sunbelt-housing-affordability-yimby",
+        "tags" : "politics & policy, (car) culture"
+    },
+    {
+        "hed" : "The one thing the Trump administration got very right",
+        "dek" : "Too bad it's now sabatoging it.",
+        "outlet" : "Vox",
+        "date" : "2025-06",
+        "link" : "https://www.vox.com/future-perfect/403444/dairy-industry-cow-life-milk-america",
+        "tags" : "ffaar, science, politics & policy"
+        
+    },
+    {
+        "hed" : "You’re being lied to about protein",
+        "dek" : "Yes, protein builds muscle. No, you don’t need as much as lifting influencers say.",
+        "outlet" : "Vox",
+        "date" : "2025-05",
+        "link" : "https://www.vox.com/future-perfect/410565/protein-muscle-gain-weightlifting-plant-based-vegan",
+        "tags" : "science, meat-less, (car) culture"
+        
+    },
+    {
+        "hed" : "The life of a dairy cow",
+        "dek" : "The surprising truth about milk is hiding in plain sight.",
+        "outlet" : "Vox",
+        "date" : "2025-04",
+        "link" : "https://www.vox.com/future-perfect/403444/dairy-industry-cow-life-milk-america",
+        "tags" : "ffaar"
+        
+    },
+    {
+        "hed" : "These fluffy white wolves explain everything wrong with bringing back extinct animals",
+        "dek" : "Don’t buy the hype about “de-extinction.”",
+        "outlet" : "Vox",
+        "date" : "2025-04",
+        "link" : "https://www.vox.com/future-perfect/407781/dire-wolves-deextinction-colossal-biosciences",
+        "tags" : "ffaar, science"
+        
+    },
     {
         "hed" : "Americans are drinking more cow’s milk. Here’s why that’s a problem.",
         "dek" : "For years, dairy milk was plummeting. The vibe shift — and America’s protein obsession — is bringing it back.",
         "outlet": "Vox",
-        "date" : "2024-3",
-        "link" : "https://www.vox.com/future-perfect/391795/ultra-processed-foods-science-vegan-meat-rfk-maha",
+        "date" : "2025-03",
+        "link" : "https://www.vox.com/future-perfect/402717/cow-milk-increase-america-dairy-plant-milks",
         "tags" : "meat-less, politics & policy"
     }, 
     {
@@ -21,7 +66,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-11",
         "link" : "https://www.vox.com/future-perfect/388106/thanksgiving-turkey-food-waste-sides-dry-bland",
-        "tags" : "meat-less, environment, culture"
+        "tags" : "meat-less, environment,(car) culture"
     }, 
     {
         "hed" : "Starbucks won’t charge extra for plant-based milk. Other companies should follow.",
@@ -69,7 +114,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/climate/24131229/vegan-vegetarian-meatless-climate-solutions-recipes-connection",
-        "tags" : "meat-less, ideas, culture, featured"
+        "tags" : "meat-less, ideas, featured"
     }, 
     {
         "hed" : "The dairy industry really, really doesn’t want you to say “bird flu in cows”",
@@ -101,7 +146,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2023-12",
         "link" : "https://www.vox.com/future-perfect/24008053/wool-marketing-environment-sustainable-claims-sheep-animal-cruelty-fast-fashion",
-        "tags" : "ffaar, environment, culture"
+        "tags" : "ffaar, environment"
     },          
     {
         "hed" : "Bird flu is surging again on poultry farms. The US is normalizing the cruelest mass killing method to stop it.",
@@ -395,7 +440,7 @@ clips = [
         "outlet": "Vox",
         "date" : "2021-07",
         "link" : "https://www.vox.com/the-goods/2021/7/12/22554546/bottled-water-michigan-waste-flint-plastic",
-        "tags" : "environment, culture"
+        "tags" : "environment, (car) culture"
     }, 
     {
         "hed" : "The Year of the Wedding After-Party",
