@@ -54,6 +54,11 @@ window.addEventListener("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY - 20);
 });
 
+// sort the items in clips.js by date, newest first
+clips.sort(function(a, b) {
+  return (a.date < b.date) ? 1 : ((b.date < a.date) ? -1 : 0);
+});
+
 // tags will appear in both the list and the section in this order
 
 const tags = ["factory farming, animals, & animal rights", "meat, food, & health", "environment", "(car) culture", "ideas", "books", "politics & policy", "featured"]

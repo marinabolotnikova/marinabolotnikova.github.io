@@ -1,6 +1,14 @@
 // current tags: politics & policy, (car) culture, ffaar, science, meat-less, environment, ideas, books
 clips = [
     {
+        "hed" : "The brutal trade-off that will decide the future of food",
+        "dek" : "A growing number of thinkers say factory farming can help save the planet. Are they right?",
+        "outlet" : "Vox",
+        "date" : "2025-08",
+        "link" : "https://www.vox.com/future-perfect/422708/future-of-food-abundance-factory-farming-grunwald",
+        "tags" : "ffaar, environment, ideas, books"
+    },
+    {
         "hed" : "America’s fastest-growing suburbs are about to get very expensive",
         "dek" : "Sprawl made suburbia affordable. Now it’s breaking it. Here’s what a new vision of the suburbs could look like.",
         "outlet" : "Vox",
