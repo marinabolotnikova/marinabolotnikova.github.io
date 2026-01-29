@@ -305,7 +305,6 @@ h1 a {
   font-size: 19px;
   text-decoration: none!important;
   font-weight: 700
-
 }
 
 @media (max-width:600px) {
@@ -322,7 +321,7 @@ h1 a {
   }
 }
 
-p, ul, h2, h3, html, body {
+p, ul, li, h2, h3, h4, html, body {
     font-family: "Nunito Sans", verdana, sans-serif;
     font-weight: 600;
     font-size: 19px;
@@ -337,6 +336,11 @@ h2 {
 
 h3 { 
     font-size: 20px!important;
+}
+
+h4 {
+    font-size: 18px!important;
+    text-align: center;
 }
 
 .clips ul { 
@@ -361,11 +365,10 @@ h3 {
     color: rgb(77, 77, 77)!important;
 }
 
-
-
 button {
   border-style: none!important;
   background-color: white;
+  text-decoration: none!important;
 }
 
 .contact img {
@@ -409,4 +412,24 @@ button {
     "YTLC" 500;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; /* To avoid showing a 1px dot on some browsers */
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* Prevent line breaks */
+  border-width: 0;
+}
+
+button[role="tab"][aria-selected="true"] {
+  text-decoration: underline 1.5px solid rgb(139, 0, 0)!important;
+}
+
+/* Ensure unselected tabs don't have underline */
+button[role="tab"][aria-selected="false"] {
+  text-decoration: none!important;
+}
 
