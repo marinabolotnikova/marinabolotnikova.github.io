@@ -36,6 +36,14 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "The hidden double standards driving our housing crisis",
+        "dek" : "Apartments are safer and more affordable than single-family homes. Why do we treat them like a hazard?",
+        "outlet" : "Vox", 
+        "date" : "2026-02-04",
+        "link" : "https://www.vox.com/future-perfect/476647/housing-crisis-affordability-building-codes-yimby",
+        "tags" : "culture, policy"
+    },
+    {
         "hed" : "Can America build beautiful places again?",
         "dek" : "Ugliness has more to do with the housing crisis than you think.",
         "outlet" : "Vox",
