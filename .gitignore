@@ -2,3 +2,7 @@
 *.md
 *.txt
 CNAME
+clips_to_csv.js
+csv_to_clips.js
+clips.csv
+clips-backup.js

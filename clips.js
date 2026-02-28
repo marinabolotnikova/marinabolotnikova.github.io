@@ -1,55 +1,73 @@
 /* This is a multi-line comment, it won't be read by the code
  * You can add single-line comments with just two slashes, like the tag list below
- * There are two ways this list stores stories. The first, which displays headlines, looks like this: 
+ * There are two ways this list stores stories. The first, which displays headlines, looks like this:
  * {
-        "hed" : "The brutal trade-off that will decide the future of food",
-        "dek" : "A growing number of thinkers say factory farming can help save the planet. Are they right?",
-        "outlet" : "Vox",
-        "date" : "2025-08",
-        "link" : "https://www.vox.com/future-perfect/422708/future-of-food-abundance-factory-farming-grunwald",
-        "tags" : "ffaar, meat-less, environment, ideas, books"
-    },
- * The second, which is nice for those Harvard Magazine stories that are “On ______” uses topics, and looks like this
+       "hed" : "The brutal trade-off that will decide the future of food",
+       "dek" : "A growing number of thinkers say factory farming can help save the planet. Are they right?",
+       "outlet" : "Vox",
+       "date" : "2025-08",
+       "link" : "https://www.vox.com/future-perfect/422708/future-of-food-abundance-factory-farming-grunwald",
+       "tags" : "ffaar, meat-less, environment, ideas, books"
+   },
+ * The second, which is nice for those Harvard Magazine stories that are "On ______" uses topics, and looks like this
  *  {
-        "topic" : "the extraordinary intelligence of crows.",
-        "outlet": "Harvard Magazine",
-        "date" : "2019-08",
-        "link" : "https://www.harvardmagazine.com/2019/08/crows-know-how-to-have-fun",
-        "tags" : "ffaar, science"
-    }, 
+       "topic" : "the extraordinary intelligence of crows.",
+       "outlet": "Harvard Magazine",
+       "date" : "2019-08",
+       "link" : "https://www.harvardmagazine.com/2019/08/crows-know-how-to-have-fun",
+       "tags" : "ffaar, science"
+   },
  * Note that both formats have an outlet, date, link, and set of tags; the difference is just hed/dek vs topic
  * Every clip should be enclosed by curly braces and followed by a comma {}, -- except the last one, which needs no comma
  * The javascript on the page handles turning the topic/hed into a link, parsing the date, etc
  */
 
-// current tags – this is set up as a list of dictionaries to allow abbreviation of the longer tags
+// current tags – this is set up as a list of dictionaries to allow abbreviation of the longer tags
 const tags = [
     {"ffaar": "factory farming, animals, & animal rights"},
+    {"science": "science"},
+    {"urbanism": "housing & urbanism"},
     {"meat-less": "meat, food, & health"},
     {"environment": "environment"},
-    {"culture": "(car) culture"},
+    {"culture": "culture"},
     {"ideas": "ideas"},
     {"books": "books"},
     {"policy": "politics & policy"},
-    {"featured": "featured"} // this tag determines what shows up at the top of the page
+    {"featured": "featured"}
 ]
 
 var clips = [
     {
+        "hed" : "One good thing the Trump administration might actually do for science",
+        "dek" : "A primate research center could become a sanctuary as the NIH pushes to move biomedical research beyond animal testing.",
+        "outlet" : "Vox",
+        "date" : "2026-02-13",
+        "link" : "https://www.vox.com/future-perfect/479043/nih-ohsu-primate-research-center-sanctuary",
+        "tags" : "ffaar, science, policy"
+    },
+    {
+        "hed" : "How to raise a low-income kid’s future earnings by 50 percent",
+        "dek" : "The surprising impact of better-designed public housing.",
+        "outlet" : "Vox",
+        "date" : "2026-02-06",
+        "link" : "https://www.vox.com/future-perfect/478064/public-housing-projects-hope-vi-cities-chetty",
+        "tags" : "science, urbanism, ideas"
+    },
+    {
         "hed" : "The hidden double standards driving our housing crisis",
         "dek" : "Apartments are safer and more affordable than single-family homes. Why do we treat them like a hazard?",
-        "outlet" : "Vox", 
+        "outlet" : "Vox",
         "date" : "2026-02-04",
         "link" : "https://www.vox.com/future-perfect/476647/housing-crisis-affordability-building-codes-yimby",
-        "tags" : "culture, policy"
+        "tags" : "urbanism, policy"
     },
     {
         "hed" : "Can America build beautiful places again?",
         "dek" : "Ugliness has more to do with the housing crisis than you think.",
         "outlet" : "Vox",
         "date" : "2026-01-20",
-        "link" :"https://www.vox.com/future-perfect/475362/yimby-movement-housing-abundance-beauty-aesthetics",
-        "tags" : "culture, policy"
+        "link" : "https://www.vox.com/future-perfect/475362/yimby-movement-housing-abundance-beauty-aesthetics",
+        "tags" : "urbanism, culture, policy"
     },
     {
         "hed" : "The new food pyramid is lying to you",
@@ -57,47 +75,47 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2026-01-09",
         "link" : "https://www.vox.com/future-perfect/474554/food-pyramid-dietary-guidelines-maha-protein",
-        "tags" : "meat-less, policy"
+        "tags" : "science, meat-less, policy"
     },
     {
         "hed" : "We need to grow the economy. We need to stop torching the planet. Here’s how we do both.",
-        "dek" : "Let’s fix the two massive efficiency sinks in American life.", 
+        "dek" : "Let’s fix the two massive efficiency sinks in American life.",
         "outlet" : "Vox",
         "date" : "2025-12",
         "link" : "https://www.vox.com/future-perfect/472664/decoupling-abundance-growth-meat-cars",
-        "tags" : "ffaar, culture, ideas"
+        "tags" : "ffaar, urbanism, environment, ideas"
     },
-    { 
-        "hed": "The surprisingly profound debate over whether fish feel pain",
-        "dek": "We can never proove that other animals are conscious. What do we do with that?",
-        "outlet": "Vox",
-        "date": "2025-11",
-        "link": "https://www.vox.com/future-perfect/469054/fish-pain-debate-sentience-consciousness",
-        "tags": "ffaar, ideas"
+    {
+        "hed" : "The surprisingly profound debate over whether fish feel pain",
+        "dek" : "We can never proove that other animals are conscious. What do we do with that?",
+        "outlet" : "Vox",
+        "date" : "2025-11",
+        "link" : "https://www.vox.com/future-perfect/469054/fish-pain-debate-sentience-consciousness",
+        "tags" : "ffaar, ideas"
     },
-    { 
-        "hed": "We love dogs as family. We also experiment on them. When will it come to an end?",
-        "dek": "The secretive dog experimentation industry is starting to crumble.",
-        "outlet": "Vox",
-        "date": "2025-11",
-        "link": "https://www.vox.com/future-perfect/466909/dog-experiments-beagles-ridglan-envigo-closing",
-        "tags": "ffaar"
+    {
+        "hed" : "We love dogs as family. We also experiment on them. When will it come to an end?",
+        "dek" : "The secretive dog experimentation industry is starting to crumble.",
+        "outlet" : "Vox",
+        "date" : "2025-11",
+        "link" : "https://www.vox.com/future-perfect/466909/dog-experiments-beagles-ridglan-envigo-closing",
+        "tags" : "ffaar, science"
     },
-    { 
-        "hed": "How soybeans took over America — and the world",
-        "dek": "This technology could feed a world of 10 billion. We’re squandering it, and the trade war with China could make it worse.",
-        "outlet": "Vox",
-        "date": "2025-10",
-        "link": "https://www.vox.com/future-perfect/464898/trump-tariffs-china-trade-war-soybeans-exports",
-        "tags": "ffaar, meat-less, environment"
+    {
+        "hed" : "How soybeans took over America — and the world",
+        "dek" : "This technology could feed a world of 10 billion. We’re squandering it, and the trade war with China could make it worse.",
+        "outlet" : "Vox",
+        "date" : "2025-10",
+        "link" : "https://www.vox.com/future-perfect/464898/trump-tariffs-china-trade-war-soybeans-exports",
+        "tags" : "ffaar, meat-less, environment, policy"
     },
-    { 
-        "hed": "Jane Goodall’s most radical message was not about saving the planet",
-        "dek": "The conservationist used her stature to advocate for one of the most important, yet unpopular, causes in the world.",
-        "outlet": "Vox",
-        "date": "2025-10",
-        "link": "https://www.vox.com/future-perfect/463524/jane-goodall-animal-rights-experimentation-veganism-factory-farming",
-        "tags": "ffaar, meat-less, environment"
+    {
+        "hed" : "Jane Goodall’s most radical message was not about saving the planet",
+        "dek" : "The conservationist used her stature to advocate for one of the most important, yet unpopular, causes in the world.",
+        "outlet" : "Vox",
+        "date" : "2025-10",
+        "link" : "https://www.vox.com/future-perfect/463524/jane-goodall-animal-rights-experimentation-veganism-factory-farming",
+        "tags" : "ffaar, meat-less, environment, ideas"
     },
     {
         "hed" : "The brutal trade-off that will decide the future of food",
@@ -113,7 +131,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2025-07",
         "link" : "https://www.vox.com/future-perfect/417892/suburbs-sunbelt-housing-affordability-yimby",
-        "tags" : "policy, culture"
+        "tags" : "urbanism, policy"
     },
     {
         "hed" : "The one thing the Trump administration got very right",
@@ -153,7 +171,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2025-03",
         "link" : "https://www.vox.com/future-perfect/402717/cow-milk-increase-america-dairy-plant-milks",
-        "tags" : "meat-less, policy"
+        "tags" : "meat-less, environment, culture, policy"
     },
     {
         "hed" : "You’re being lied to about “ultra-processed” foods",
@@ -161,7 +179,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-12",
         "link" : "https://www.vox.com/future-perfect/391795/ultra-processed-foods-science-vegan-meat-rfk-maha",
-        "tags" : "meat-less, health, science, featured, policy"
+        "tags" : "science, meat-less, culture, policy, featured"
     },
     {
         "hed" : "8 million turkeys will be thrown in the trash this Thanksgiving",
@@ -169,7 +187,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-11",
         "link" : "https://www.vox.com/future-perfect/388106/thanksgiving-turkey-food-waste-sides-dry-bland",
-        "tags" : "meat-less, environment,culture"
+        "tags" : "ffaar, meat-less, environment, culture"
     },
     {
         "hed" : "Starbucks won’t charge extra for plant-based milk. Other companies should follow.",
@@ -185,7 +203,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-10",
         "link" : "https://www.vox.com/future-perfect/377096/sonoma-county-denver-factory-farming-slaughterhouse-ban-ballot-measures",
-        "tags" : "ffaar, activism, policy"
+        "tags" : "ffaar, policy"
     },
     {
         "hed" : "How Factory Farming Ends",
@@ -193,7 +211,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-08",
         "link" : "https://www.vox.com/future-perfect/364288/how-factory-farming-ends-animal-rights-vegans-climate-ethics",
-        "tags" : "ffaar, ideas, activism"
+        "tags" : "ffaar, ideas"
     },
     {
         "hed" : "Humanity is failing one of its greatest moral tests",
@@ -201,7 +219,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-08",
         "link" : "https://www.vox.com/future-perfect/363550/factory-farming-human-progress-sustainable-food-movement",
-        "tags" : "ffaar, ideas, activism"
+        "tags" : "ffaar, ideas"
     },
     {
         "hed" : "Republicans want to put pigs back in tiny cages. Again.",
@@ -209,7 +227,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-06",
         "link" : "https://www.vox.com/future-perfect/353393/farm-bill-republicans-prop-12-gestation-crates-pork",
-        "tags" : "ffaar,  policy"
+        "tags" : "ffaar, policy"
     },
     {
         "hed" : "I gave up meat and gained so much more",
@@ -217,7 +235,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/climate/24131229/vegan-vegetarian-meatless-climate-solutions-recipes-connection",
-        "tags" : "meat-less, ideas, featured"
+        "tags" : "meat-less, culture, ideas, featured"
     },
     {
         "hed" : "The dairy industry really, really doesn’t want you to say “bird flu in cows”",
@@ -225,7 +243,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/future-perfect/24128700/bird-fludairy-meat-industry-h5n1-cows-milk-eggs-safety",
-        "tags" : "ffaar, health, science"
+        "tags" : "ffaar, science"
     },
     {
         "hed" : "Mega drive-throughs explain everything wrong with American cities",
@@ -233,7 +251,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/the-highlight/24089853/mega-drive-throughs-cities-chick-fil-a-chipotle",
-        "tags" : "culture"
+        "tags" : "urbanism, culture"
     },
     {
         "hed" : "9 charts that show US factory farming is even bigger than you realize",
@@ -249,7 +267,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-12",
         "link" : "https://www.vox.com/future-perfect/24008053/wool-marketing-environment-sustainable-claims-sheep-animal-cruelty-fast-fashion",
-        "tags" : "ffaar, environment"
+        "tags" : "ffaar, environment, culture"
     },
     {
         "hed" : "Bird flu is surging again on poultry farms. The US is normalizing the cruelest mass killing method to stop it.",
@@ -257,7 +275,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-12",
         "link" : "https://www.vox.com/future-perfect/23963820/bird-flu-surge-us-ventilation-shutdown-veterinarians",
-        "tags" : "ffaar, science, health"
+        "tags" : "ffaar, science"
     },
     {
         "hed" : "You’re more likely to go to prison for exposing animal cruelty than for committing it",
@@ -265,7 +283,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-11",
         "link" : "https://www.vox.com/future-perfect/23952627/wayne-hsiung-conviction-direct-action-everywhere-dxe-rescue-sonoma-county-chickens",
-        "tags" : "ffaar, activism"
+        "tags" : "ffaar"
     },
     {
         "hed" : "How cars ruin wild animals’ lives",
@@ -273,7 +291,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-09",
         "link" : "https://www.vox.com/future-perfect/23868483/cars-roads-roadkill-crossing-goldfarb-national-parks",
-        "tags" : "ffaar, culture, environment, books"
+        "tags" : "ffaar, urbanism, environment, culture, books"
     },
     {
         "hed" : "What if AI treats humans the way we treat animals?",
@@ -281,7 +299,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/the-highlight/23777171/ai-animals-rights-cruelty-transhumanism-bostrom",
-        "tags" : "ffaar, ideas, books, featured"
+        "tags" : "ffaar, science, ideas, books, featured"
     },
     {
         "hed" : "America has the world’s safest air travel but sucks so bad at car safety",
@@ -289,7 +307,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/future-perfect/2023/8/25/23844717/america-safe-air-travel-car-safety-accidents",
-        "tags" : "culture, cities, policy, ideas"
+        "tags" : "urbanism, culture, ideas, policy"
     },
     {
         "hed" : "Undercover audio of a Tyson employee reveals “free-range” chicken is meaningless",
@@ -297,7 +315,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/future-perfect/23724740/tyson-chicken-free-range-humanewashing-investigation-animal-cruelty",
-        "tags" : "ffaar, activism"
+        "tags" : "ffaar"
     },
     {
         "hed" : "What’s worse than a cruel animal experiment? A cruel and fake animal experiment.",
@@ -305,7 +323,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-07",
         "link" : "https://www.vox.com/future-perfect/2023/7/14/23794186/animal-testing-experiments-vivisection-academic-fraud-dishonesty-research",
-        "tags" : "ffaar, science, policy, ideas"
+        "tags" : "ffaar, science, ideas, policy"
     },
     {
         "hed" : "A fire killed 18,000 cows in Texas. It’s a horrifyingly normal disaster.",
@@ -313,7 +331,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-04",
         "link" : "https://www.vox.com/future-perfect/23683141/texas-farm-fire-explosion-dimmitt-cows-factory-dairy",
-        "tags" : "ffaar, policy, ideas"
+        "tags" : "ffaar, ideas, policy"
     },
     {
         "hed" : "The fight against factory farming is winning criminal trials",
@@ -321,7 +339,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-03",
         "link" : "https://www.vox.com/future-perfect/23647682/factory-farming-dxe-criminal-trial-rescue",
-        "tags" : "ffaar, activism"
+        "tags" : "ffaar"
     },
     {
         "hed" : "Eggs are expensive for all the wrong reasons",
@@ -329,7 +347,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-02",
         "link" : "https://www.vox.com/future-perfect/23588340/egg-prices-expensive-bird-flu-shortage-price-gouging",
-        "tags" : "meat-less, ffaar"
+        "tags" : "ffaar, meat-less, policy"
     },
     {
         "hed" : "The bitter civil war dividing American veterinarians",
@@ -337,7 +355,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-01",
         "link" : "https://www.vox.com/future-perfect/23516639/veterinarians-avma-factory-farming-ventilation-shutdown",
-        "tags" : "ffaar, featured"
+        "tags" : "ffaar, science, featured"
     },
     {
         "hed" : "Cory Booker has a plan to stop taxpayer bailouts of Big Meat",
@@ -353,7 +371,7 @@ var clips = [
         "outlet" : "The Guardian",
         "date" : "2022-11",
         "link" : "https://www.theguardian.com/environment/2022/nov/09/us-farms-lobby-to-use-cruellest-killing-method-as-bird-flu-rages",
-        "tags" : "ffaar, policy, health"
+        "tags" : "ffaar, policy"
     },
     {
         "hed" : "Activists Acquitted in Trial for Taking Piglets from Smithfield Foods",
@@ -361,7 +379,7 @@ var clips = [
         "outlet" : "The Intercept",
         "date" : "2022-10",
         "link" : "https://theintercept.com/2022/10/08/smithfield-animal-rights-piglets-trial/",
-        "tags" : "ffaar, activism"
+        "tags" : "ffaar"
     },
     {
         "hed" : "U.S. Supreme Court to hear case on California's ban on extreme confinement crates",
@@ -377,7 +395,7 @@ var clips = [
         "outlet" : "The Guardian",
         "date" : "2022-08",
         "link" : "https://www.theguardian.com/environment/2022/aug/26/usda-diet-guide-myplate-climate-crisis",
-        "tags" : "environment, meat-less, policy"
+        "tags" : "science, meat-less, environment, policy"
     },
     {
         "hed" : "“Forget They Are an Animal”",
@@ -385,7 +403,7 @@ var clips = [
         "outlet" : "Current Affairs",
         "date" : "2022-08",
         "link" : "https://www.currentaffairs.org/2022/08/forget-they-are-an-animal",
-        "tags" : "ffaar"
+        "tags" : "ffaar, ideas"
     },
     {
         "hed" : "What this Mother Jones story got wrong on primate testing",
@@ -449,7 +467,7 @@ var clips = [
         "outlet" : "Current Affairs",
         "date" : "2022-03",
         "link" : "https://www.currentaffairs.org/news/2022/03/why-the-anti-factory-farming-movement-needs-direct-action",
-        "tags" : "ffaar, activism"
+        "tags" : "ffaar, ideas"
     },
     {
         "hed" : "Five things to know about the SCOTUS challenge to California’s ban on extreme farm animal confinement",
@@ -465,7 +483,7 @@ var clips = [
         "outlet" : "The Guardian",
         "date" : "2022-01",
         "link" : "https://www.theguardian.com/world/2022/jan/22/an-animal-rights-activist-was-in-court-on-criminal-charges-why-was-the-case-suddenly-dismissed",
-        "tags" : "ffaar, activism"
+        "tags" : "ffaar"
     },
     {
         "hed" : "For These Wisconsin Farms, Animals Are Off the Table",
@@ -473,7 +491,7 @@ var clips = [
         "outlet" : "In These Times",
         "date" : "2021-12",
         "link" : "https://inthesetimes.com/article/rural-wisconsin-farm-sanctuary-animal-rights",
-        "tags" : "ffaar, activism"
+        "tags" : "ffaar"
     },
     {
         "hed" : "The Case Against the Concept of Invasive Species",
@@ -481,7 +499,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2021-11",
         "link" : "https://www.vox.com/down-to-earth/22796160/invasive-species-climate-change-range-shifting",
-        "tags" : "ffaar, environment, science, ideas"
+        "tags" : "ffaar, science, environment, ideas"
     },
     {
         "hed" : "America’s car crash epidemic",
@@ -489,7 +507,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2021-09",
         "link" : "https://www.vox.com/22675358/us-car-deaths-year-traffic-covid-pandemic",
-        "tags" : "health, cities, culture"
+        "tags" : "urbanism"
     },
     {
         "hed" : "The Spiritual Bankruptcy of Bottled Water",
@@ -529,7 +547,7 @@ var clips = [
         "outlet" : "Harvard Magazine",
         "date" : "2020-11",
         "link" : "https://harvardmagazine.com/2020/11/montage-family-history",
-        "tags" : "books, ideas"
+        "tags" : "culture, ideas, books"
     },
     {
         "hed" : "The Watchdog",
@@ -553,7 +571,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2020-03",
         "link" : "https://www.vox.com/the-goods/2020/3/11/21152975/crossover-utility-vehicle-honda-cr-v-suv",
-        "tags" : "environment, cities, culture"
+        "tags" : "urbanism, environment, culture"
     },
     {
         "hed" : "History from Below",
@@ -569,7 +587,7 @@ var clips = [
         "outlet" : "Tenderly",
         "date" : "2020-02",
         "link" : "https://medium.com/tenderlymag/what-vegans-with-pcos-actually-need-to-know-about-food-251388c66728",
-        "tags" : "meat-less, health, science"
+        "tags" : "science, meat-less"
     },
     {
         "dek" : "and encountering factory farming in literature.",
@@ -577,7 +595,7 @@ var clips = [
         "outlet" : "Pittsburgh Post-Gazette",
         "date" : "2020-02",
         "link" : "https://www.post-gazette.com/ae/books/2020/02/09/Animalia-Jean-Baptiste-Del-Amo-factory-farms/stories/201911030003",
-        "tags" : "ffaar, books, ideas"
+        "tags" : "ffaar, culture, ideas, books"
     },
     {
         "hed" : "Animal Liberation Needs Animal Voices",
@@ -585,7 +603,7 @@ var clips = [
         "outlet" : "Tenderly",
         "date" : "2019-12",
         "link" : "https://medium.com/tenderlymag/animal-liberation-needs-animal-voices-eef6973ba777",
-        "tags" : "ffaar, activism, books, ideas"
+        "tags" : "ffaar, ideas, books"
     },
     {
         "dek" : "and how factory farming has remade life on Earth.",
@@ -593,7 +611,7 @@ var clips = [
         "outlet" : "Pittsburgh Post-Gazette",
         "date" : "2019-11",
         "link" : "https://www.post-gazette.com/ae/books/2019/11/17/Jonathan-Safran-Foer-We-Are-the-Weather-Saving-Planet-Begins-at-Breakfast/stories/201911170009",
-        "tags" : "ffaar, environment, books, ideas"
+        "tags" : "ffaar, science, environment, culture, ideas, books"
     },
     {
         "topic" : "the extraordinary intelligence of crows.",
@@ -616,7 +634,7 @@ var clips = [
         "outlet" : "Harvard Magazine",
         "date" : "2019-07",
         "link" : "https://harvardmagazine.com/2019/07/rodrik-trilemma-trade-globalization",
-        "tags" : "ideas"
+        "tags" : "science, ideas"
     },
     {
         "topic" : "the joy of baby turkey season in Cambridge.",
@@ -638,7 +656,7 @@ var clips = [
         "outlet" : "Harvard Magazine",
         "date" : "2018-05",
         "link" : "https://www.harvardmagazine.com/2019/05/suffrage-movement-activism",
-        "tags" : "books, ideas"
+        "tags" : "ideas, books"
     },
     {
         "dek" : "a new book about kibbutzim, and the kinds of arguments economists make.",
@@ -646,7 +664,7 @@ var clips = [
         "outlet" : "The Forward",
         "date" : "2018-04",
         "link" : "https://forward.com/culture/books/398746/why-the-idea-of-an-egalitarian-kibbutz-was-always-a-myth/",
-        "tags" : "books, ideas"
+        "tags" : "ideas, books"
     },
     {
         "hed" : "Sex and Due Process on Campus",
@@ -662,7 +680,7 @@ var clips = [
         "outlet" : "Harvard Magazine",
         "date" : "2018-01",
         "link" : "https://harvardmagazine.com/2018/01/dara-horn-eternal-life",
-        "tags" : "books, ideas"
+        "tags" : "ideas, books"
     },
     {
         "dek" : "and the kinds of arguments linguists make.",
@@ -670,7 +688,7 @@ var clips = [
         "outlet" : "The Forward",
         "date" : "2017-08",
         "link" : "https://forward.com/culture/378315/how-hebrew-has-managed-to-survive/",
-        "tags" : "books, ideas"
+        "tags" : "ideas, books"
     },
     {
         "topic" : "the unfortunate Netflix series *Friends from College*.",
@@ -684,7 +702,7 @@ var clips = [
         "outlet" : "Harvard Magazine",
         "date" : "2017-07",
         "link" : "https://harvardmagazine.com/2017/07/a-postmodern-youth",
-        "tags" : "books, ideas"
+        "tags" : "ideas, books"
     },
     {
         "hed" : "A Language Out of Nothing",
