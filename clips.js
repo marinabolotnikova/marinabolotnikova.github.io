@@ -38,6 +38,30 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "Hey Google, stop trying to write my emails!",
+        "dek" : "How AI-generated email creates a synthetic version of you.",
+        "outlet" : "Vox",
+        "date" : "2026-03-27",
+        "link" : "https://www.vox.com/future-perfect/483948/gmail-smart-replies-ai-consciousness",
+        "tags" : "ideas, culture"
+    },
+    {
+        "hed" : "Americans ditched veal. What replaced it may be just as bad.",
+        "dek" : "The giant loophole that lets Big Dairy keep baby cows in solitary confinement.",
+        "outlet" : "Vox",
+        "date" : "2026-03-26",
+        "link" : "https://www.vox.com/the-highlight/480529/calf-ranches-grimmius-investigation-dairy-confinement",
+        "tags" : "ffaar, meat-less, policy"
+    },
+    {
+        "hed" : "The biggest drawback of driverless cars",
+        "dek" : "Driverless cars could save thousands of lives. They might also break our cities.",
+        "outlet" : "Vox",
+        "date" : "2026-03-04",
+        "link" : "https://www.vox.com/future-perfect/481371/driverless-cars-avs-safety-miles-driven",
+        "tags" : "urbanism, policy"
+    },  
+    {
         "hed" : "The biggest drawback of driverless cars",
         "dek" : "Driverless cars could save thousands of lives. They might also break our cities.",
         "outlet" : "Vox",
