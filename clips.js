@@ -59,16 +59,8 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2026-03-04",
         "link" : "https://www.vox.com/future-perfect/481371/driverless-cars-avs-safety-miles-driven",
-        "tags" : "urbanism, policy"
+        "tags" : "science, urbanism, policy"
     },  
-    {
-        "hed" : "The biggest drawback of driverless cars",
-        "dek" : "Driverless cars could save thousands of lives. They might also break our cities.",
-        "outlet" : "Vox",
-        "date" : "2026-03-04",
-        "link" : "https://www.vox.com/future-perfect/481371/driverless-cars-avs-safety-miles-driven",
-        "tags" : "science, urbanism"
-    },
     {
         "hed" : "One good thing the Trump administration might actually do for science",
         "dek" : "A primate research center could become a sanctuary as the NIH pushes to move biomedical research beyond animal testing.",
