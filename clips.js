@@ -37,6 +37,14 @@ const tags = [
 ]
 
 var clips = [
+    { 
+        "hed" : "How Austin’s stunning drop in rents explains housing in America",
+        "dek" : "We finally have some good news about housing affordability.",
+        "outlet" : "Vox",
+        "date" : "2026-04-10",
+        "link" : "https://www.vox.com/future-perfect/485295/austin-national-rents-declining-yimby",
+        "tags" : "urbanism, policy, science"    
+    },
     {
         "hed" : "Hey Google, stop trying to write my emails!",
         "dek" : "How AI-generated email creates a synthetic version of you.",
@@ -111,7 +119,7 @@ var clips = [
     },
     {
         "hed" : "The surprisingly profound debate over whether fish feel pain",
-        "dek" : "We can never proove that other animals are conscious. What do we do with that?",
+        "dek" : "We can never prove that other animals are conscious. What do we do with that?",
         "outlet" : "Vox",
         "date" : "2025-11",
         "link" : "https://www.vox.com/future-perfect/469054/fish-pain-debate-sentience-consciousness",
@@ -159,10 +167,10 @@ var clips = [
     },
     {
         "hed" : "The one thing the Trump administration got very right",
-        "dek" : "Too bad it's now sabatoging it.",
+        "dek" : "Too bad it's now sabotaging it.",
         "outlet" : "Vox",
         "date" : "2025-06",
-        "link" : "https://www.vox.com/future-perfect/403444/dairy-industry-cow-life-milk-america",
+        "link" : "https://www.vox.com/future-perfect/417127/trump-nih-harvard-defunding-monkey-research-livingstone",
         "tags" : "ffaar, science, policy"
     },
     {
@@ -279,7 +287,7 @@ var clips = [
     },
     {
         "hed" : "9 charts that show US factory farming is even bigger than you realize",
-        "dek" : "Factory farms are now so big that we need a new word for them (with Kenny Torella).",
+        "dek" : "Factory farms are now so big that we need a new word for them (with Kenny Torrella).",
         "outlet" : "Vox",
         "date" : "2024-02",
         "link" : "https://www.vox.com/future-perfect/24079424/factory-farming-facts-meat-usda-agriculture-census",
@@ -582,7 +590,7 @@ var clips = [
         "tags" : "policy"
     },
     {
-        "hed" : "From Lews & Clark to Michael Brown",
+        "hed" : "From Lewis & Clark to Michael Brown",
         "dek" : "A profile of Walter Johnson and his radical history of my home city, St. Louis.",
         "outlet" : "Harvard Magazine",
         "date" : "2020-05",
@@ -678,7 +686,7 @@ var clips = [
         "dek" : "a new history of the women's suffrage movement.",
         "topic" : "Susan Ware’s *Why they Marched*,",
         "outlet" : "Harvard Magazine",
-        "date" : "2018-05",
+        "date" : "2019-05",
         "link" : "https://www.harvardmagazine.com/2019/05/suffrage-movement-activism",
         "tags" : "ideas, books"
     },
