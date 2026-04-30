@@ -38,6 +38,22 @@ const tags = [
 
 var clips = [
     { 
+        "hed" : "The battle over rescuing 2,000 beagles from lab research is not over.",
+        "dek" : "A viral campaign to rescue beagles used for experiments is part of a much bigger fight.",
+        "outlet" : "Vox",
+        "date" : "2026-04-29",
+        "link" : "https://www.vox.com/future-perfect/486973/beagle-rescue-ridglan-animal-testing-research-rights",
+        "tags" : "ffaar, science"    
+    },
+    { 
+        "hed" : "The surprising reason why pedestrian deaths are down in the US",
+        "dek" : "And why walking is still so dangerous here.",
+        "outlet" : "Vox",
+        "date" : "2026-04-27",
+        "link" : "https://www.vox.com/future-perfect/486864/pedestrian-deaths-decrease-walking-car-safety",
+        "tags" : "urbanism, policy, science"    
+    },
+    { 
         "hed" : "How Austin’s stunning drop in rents explains housing in America",
         "dek" : "We finally have some good news about housing affordability.",
         "outlet" : "Vox",
