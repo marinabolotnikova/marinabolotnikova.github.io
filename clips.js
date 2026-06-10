@@ -33,17 +33,42 @@ const tags = [
     {"ideas": "ideas"},
     {"books": "books"},
     {"policy": "politics & policy"},
-    {"featured": "featured"}
+    {"featured": "featured"},
+    {"tech": "technology"}
 ]
 
 var clips = [
+    {
+        "hed" : "A simple way to lower everyone’s property taxes",
+        "dek" : "Compact neighborhoods cost cities half as much to maintain. So why don't we build more of them?",
+        "outlet" : "Vox",
+        "date" : "2026-06-03",
+        "link" : "https://www.vox.com/future-perfect/490658/housing-crisis-sprawl-density-property-taxes",
+        "tags" : "urbanism, environment, ideas"
+    },
+        {
+        "hed" : "Americans don’t know how to fight AI. So they’re fighting data centers.",
+        "dek" : "The data center revolt is a symptom of our political failure on AI.",
+        "outlet" : "Vox",
+        "date" : "2026-06-02",
+        "link" : "https://www.vox.com/future-perfect/490350/data-center-moratoria-ai-backlash",
+        "tags" : "tech, urbanism, environment, policy"
+    },
+        {
+        "hed" : "The global epidemic of death by cars",
+        "dek" : "We’ve made little progress against one of the world’s greatest killers.",
+        "outlet" : "Vox",
+        "date" : "2026-05-26",
+        "link" : "https://www.vox.com/future-perfect/489358/car-deaths-global-south-road-safety",
+        "tags" : "urbanism, environment, policy"
+    },
     { 
         "hed" : "The battle over rescuing 2,000 beagles from lab research is not over.",
         "dek" : "A viral campaign to rescue beagles used for experiments is part of a much bigger fight.",
         "outlet" : "Vox",
         "date" : "2026-04-29",
         "link" : "https://www.vox.com/future-perfect/486973/beagle-rescue-ridglan-animal-testing-research-rights",
-        "tags" : "ffaar, science"    
+        "tags" : "ffaar, science, featured"    
     },
     { 
         "hed" : "The surprising reason why pedestrian deaths are down in the US",
@@ -67,7 +92,15 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2026-03-27",
         "link" : "https://www.vox.com/future-perfect/483948/gmail-smart-replies-ai-consciousness",
-        "tags" : "ideas, culture"
+        "tags" : "tech, ideas, culture"
+    },
+    {
+        "hed" : "The medium is the message, & many other thoughts on the mass rescue of beagles from Ridglan Farms",
+        "dek" : "I was there. You know I couldn’t not write about this!",
+        "outlet" : "Substack",
+        "date" : "2026-03-22",
+        "link" : "https://mbolotnikova.substack.com/p/ridglan-mass-rescue-beagles-wisconsin-research",
+        "tags" : "ffaar, science, tech"
     },
     {
         "hed" : "Americans ditched veal. What replaced it may be just as bad.",
@@ -83,7 +116,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2026-03-04",
         "link" : "https://www.vox.com/future-perfect/481371/driverless-cars-avs-safety-miles-driven",
-        "tags" : "science, urbanism, policy"
+        "tags" : "tech, science, urbanism, policy"
     },  
     {
         "hed" : "One good thing the Trump administration might actually do for science",
@@ -119,7 +152,7 @@ var clips = [
     },
     {
         "hed" : "The new food pyramid is lying to you",
-        "dek" : "It's also a contradictory mess.",
+        "dek" : "It’s also a contradictory mess.",
         "outlet" : "Vox",
         "date" : "2026-01-09",
         "link" : "https://www.vox.com/future-perfect/474554/food-pyramid-dietary-guidelines-maha-protein",
@@ -183,7 +216,7 @@ var clips = [
     },
     {
         "hed" : "The one thing the Trump administration got very right",
-        "dek" : "Too bad it's now sabotaging it.",
+        "dek" : "Too bad it’s now sabotaging it.",
         "outlet" : "Vox",
         "date" : "2025-06",
         "link" : "https://www.vox.com/future-perfect/417127/trump-nih-harvard-defunding-monkey-research-livingstone",
@@ -203,7 +236,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2025-04",
         "link" : "https://www.vox.com/future-perfect/403444/dairy-industry-cow-life-milk-america",
-        "tags" : "ffaar"
+        "tags" : "ffaar, featured"
     },
     {
         "hed" : "These fluffy white wolves explain everything wrong with bringing back extinct animals",
@@ -211,7 +244,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2025-04",
         "link" : "https://www.vox.com/future-perfect/407781/dire-wolves-deextinction-colossal-biosciences",
-        "tags" : "ffaar, science, environment"
+        "tags" : "tech, ffaar, science, environment"
     },
     {
         "hed" : "Americans are drinking more cow’s milk. Here’s why that’s a problem.",
@@ -255,7 +288,7 @@ var clips = [
     },
     {
         "hed" : "How Factory Farming Ends",
-        "dek" : "I brought together 10 writers & thinkers for this collection of stories on the past and future of the fight against one of the great moral calamaties of our time.",
+        "dek" : "I brought together 10 writers & thinkers for this collection of stories on the past and future of the fight against one of the great moral calamities of our time.",
         "outlet" : "Vox",
         "date" : "2024-08",
         "link" : "https://www.vox.com/future-perfect/364288/how-factory-farming-ends-animal-rights-vegans-climate-ethics",
@@ -347,7 +380,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/the-highlight/23777171/ai-animals-rights-cruelty-transhumanism-bostrom",
-        "tags" : "ffaar, science, ideas, books, featured"
+        "tags" : "tech, ffaar, science, ideas, books, featured"
     },
     {
         "hed" : "America has the world’s safest air travel but sucks so bad at car safety",
@@ -383,7 +416,7 @@ var clips = [
     },
     {
         "hed" : "The fight against factory farming is winning criminal trials",
-        "dek" : "Why it's such a big deal that juries are siding with activists who rescue animals from factory farms.",
+        "dek" : "Why it’s such a big deal that juries are siding with activists who rescue animals from factory farms.",
         "outlet" : "Vox",
         "date" : "2023-03",
         "link" : "https://www.vox.com/future-perfect/23647682/factory-farming-dxe-criminal-trial-rescue",
@@ -483,7 +516,7 @@ var clips = [
         "outlet" : "Poynter",
         "date" : "2022-05",
         "link" : "https://www.poynter.org/ethics-trust/2022/in-the-age-of-social-media-blasts-whats-the-point-of-letters-to-the-editor/",
-        "tags" : "ideas"
+        "tags" : "tech, ideas"
     },
     {
         "hed" : "Amid Bird Flu Outbreak, Meat Producers Seek “Ventilation Shutdown” for Mass Chicken Killing",

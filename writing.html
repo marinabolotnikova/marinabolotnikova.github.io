@@ -290,9 +290,15 @@
     if (clip.dek == undefined) {newli.append(" ");}
     else {newli.append(" " + clip.dek + " ");}
     // newli.append(document.createElement('br'));
-    let ital = document.createElement("i");
-    ital.innerHTML = clip.outlet;
-    newli.append(ital)
+    if (clip.outlet == "Substack") {
+      console.log("substack")
+      newli.append(clip.outlet);
+    }
+    else { 
+      let outlet = document.createElement("i");
+      outlet.innerHTML = clip.outlet;
+      newli.append(outlet)
+    }
     let datestr = ", " + get_month(clip.date.substr(5,)) + " " + clip.date.substr(0,4);
     newli.append(datestr)
     parent.appendChild(newli);
