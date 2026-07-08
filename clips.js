@@ -39,6 +39,22 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "The evidence against “ultra-processed” foods is weaker than you think",
+        "dek" : "New analysis suggests other factors may explain the harms blamed on “ultra-processing.”",
+        "outlet" : "Vox",
+        "date" : "2026-07-04",
+        "link" : "https://www.vox.com/future-perfect/494045/ultra-processed-foods-science-rcts",
+        "tags" : "science, meat-less"
+    },
+    {
+        "hed" : "What housing in America could look like in 50 years",
+        "dek" : "Abundant, affordable, and…fun? Here's how to get there.",
+        "outlet" : "Vox",
+        "date" : "2026-07-01",
+        "link" : "https://www.vox.com/the-highlight/493413/america-at-250-housing-crisis-cities-future",
+        "tags" : "urbanism, policy, ideas"
+    },
+    {
         "hed" : "A simple way to lower everyone’s property taxes",
         "dek" : "Compact neighborhoods cost cities half as much to maintain. So why don't we build more of them?",
         "outlet" : "Vox",
@@ -46,11 +62,11 @@ var clips = [
         "link" : "https://www.vox.com/future-perfect/490658/housing-crisis-sprawl-density-property-taxes",
         "tags" : "urbanism, environment, ideas"
     },
-        {
+    {
         "hed" : "Americans don’t know how to fight AI. So they’re fighting data centers.",
         "dek" : "The data center revolt is a symptom of our political failure on AI.",
         "outlet" : "Vox",
-        "date" : "2026-06-02",
+        "date" : "2026-06-25",
         "link" : "https://www.vox.com/future-perfect/490350/data-center-moratoria-ai-backlash",
         "tags" : "tech, urbanism, environment, policy"
     },
