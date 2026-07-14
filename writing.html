@@ -261,44 +261,45 @@
     return month[n - 1];
   }
 
-  // helper to italicize the title
-  function ital_title(topic) { 
-    if (!topic.includes("*")) {return topic;}
-    let start =  topic.indexOf("*")
-    let end = topic.lastIndexOf("*")
-    let new_topic = topic.substr(0,start) + "<i>" + topic.substr(start + 1,end - start - 1) + "</i>" + topic.substr(end + 1,)
-    return new_topic;
+  // heds and topics must not contain <a> tags — the story link is set via clip.link
+  function strip_links(text) {
+    if (/<a[\s>]/i.test(text)) {
+      console.log("Warning: removed link markup from hed/topic (set the link with the clip's \"link\" attribute): " + text);
+      return text.replace(/<a\b[^>]*>/gi, "").replace(/<\/a>/gi, "");
+    }
+    return text;
   }
 
   // appeds a clip to a given parent element
-  function append_clip(clip, parent) { 
+  function append_clip(clip, parent) {
     var newli = document.createElement("li");
     var link = document.createElement("a");
     link.href = clip.link
     link.target = "_blank"
     if (clip.hed == undefined) {
       newli.append(document.createTextNode("On "));
-      link.innerHTML = ital_title(clip.topic);
+      link.innerHTML = strip_links(clip.topic);
       newli.append(link)
     }
-    else { 
-      link.innerHTML = clip.hed;
+    else {
+      link.innerHTML = strip_links(clip.hed);
       newli.append(link)
       // newli.append(document.createElement('br'))
       newli.append(document.createTextNode(" •"))
     }
     if (clip.dek == undefined) {newli.append(" ");}
-    else {newli.append(" " + clip.dek + " ");}
+    else {
+      newli.append(" ");
+      let dek = document.createElement("span");
+      dek.innerHTML = clip.dek;
+      newli.append(dek);
+      newli.append(" ");
+    }
     // newli.append(document.createElement('br'));
-    if (clip.outlet == "Substack") {
-      console.log("substack")
-      newli.append(clip.outlet);
-    }
-    else { 
-      let outlet = document.createElement("i");
-      outlet.innerHTML = clip.outlet;
-      newli.append(outlet)
-    }
+    let outletItal = !(clip["outlet-ital"] === false || clip["outlet-ital"] === "false");
+    let outlet = document.createElement(outletItal ? "i" : "span");
+    outlet.innerHTML = clip.outlet;
+    newli.append(outlet)
     let datestr = ", " + get_month(clip.date.substr(5,)) + " " + clip.date.substr(0,4);
     newli.append(datestr)
     parent.appendChild(newli);

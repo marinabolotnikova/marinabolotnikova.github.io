@@ -1,6 +1,33 @@
 /* This is a multi-line comment, it won't be read by the code
- * You can add single-line comments with just two slashes, like the tag list below
- * There are two ways this list stores stories. The first, which displays headlines, looks like this:
+ * You can add single-line comments with just two slashes, like above the tag list below
+ * 
+ * HOW THIS FILE WORKS
+ * 
+ * TAGS
+ * `const tags` is what's called a "list" of the tags in use in this document. In general lists are
+ * structured like [item1, item2, item3]. Note :
+ *      * The square brackets on either side [] tell the code it is a list
+ *      * The items in the list are separated by a comma
+ * In this case, `tags` is a list of "dictionaries". Dictionaries are sets key/value pairs, in this case, one pair
+ * in each dictionary (the clips have more pairs) The first dictionary has one key, "ffaar", and one 
+ * value "factory farming...", which tells the code on the webpage that the tag "ffaar" should be displayed as
+ * "factory farming, animals, & animal rights". the keys and values enclosed in "double quotes" 
+ * and separated by a colon; each dictionary is enclosed by curly braces {} and, like any items in a list, are 
+ * separated by commas.
+ * 
+ * CLIPS
+ * `const clips` is also a list of dictionaries, [{clip1}, {clip2}, {clip3} ...] except unlike the tag dictionaries, 
+ * the clip dictionaries have several different keys, so that the code can grab the hed, dek, date, etc for each story
+ * 
+ * The order of the clips within the list of clips matters (though the code sorts it by date), while the order of the
+ * attributes of each clip doesn't matter -- the code will recogize the bit after `"hed" : ` as the headline regardless
+ * of whether it comes before or after the "dek"
+ * 
+ * Every clip should be enclosed by curly braces and followed by a comma {}, -- except the last one, 
+ * which needs to NOT be followed by a comma (remember, this is just a comma-separated list)
+ * The javascript on the page handles turning the topic/hed into a link, parsing the date, etc
+ * 
+ * There are two formats this list uses to store clips. The first, which displays headlines, looks like this:
  * {
        "hed" : "The brutal trade-off that will decide the future of food",
        "dek" : "A growing number of thinkers say factory farming can help save the planet. Are they right?",
@@ -9,7 +36,7 @@
        "link" : "https://www.vox.com/future-perfect/422708/future-of-food-abundance-factory-farming-grunwald",
        "tags" : "ffaar, meat-less, environment, ideas, books"
    },
- * The second, which is nice for those Harvard Magazine stories that are "On ______" uses topics, and looks like this
+ * The second, which is nice for those Harvard Magazine stories that are "On ______" uses topics, looks like this with no dek
  *  {
        "topic" : "the extraordinary intelligence of crows.",
        "outlet": "Harvard Magazine",
@@ -17,9 +44,34 @@
        "link" : "https://www.harvardmagazine.com/2019/08/crows-know-how-to-have-fun",
        "tags" : "ffaar, science"
    },
+ * The above would render like this, with the link on the bit in the "topic" entry:
+ * > On the extraordinary intelligence of crows. Harvard Magazine, August 2019
+ * 
+ * The topic-type clips can also have a dek, like this: 
+ *  {
+        "dek" : "in which a German-American scholar discovers that his grandfather was a Nazi.",
+        "topic" : "Martin Puchner’s <i>The Language of Thieves</i>,",
+        "outlet" : "Harvard Magazine",
+        "date" : "2020-11",
+        "link" : "https://harvardmagazine.com/2020/11/montage-family-history",
+        "tags" : "culture, ideas, books"
+    },
+ * Which renders like the below (the link being only on "Martin.... Thieves"):
+ * > On Martin Puchner’s The Language of Thieves, in which a German-American scholar
+ * > discovers that his grandfather was a Nazi. Harvard Magazine, November 2020
+ *
+ * FORMATTING
+ * As the book title above suggests, you can use raw HTML tags like <i>italics</i> or <b>bold</b> inside
+ * the "hed", "dek", "topic", and "outlet" entries, and they'll render as formatted text on the page.
+ * The exceptions:
+ *      * Don't put <a> link tags in a "hed" or "topic" -- the story's link should always be set with the
+ *        "link" entry. Any <a> tags there will be stripped out (with a warning in the browser console).
+ *      * The "outlet" is automatically italicized. To turn that off for a clip (e.g. for Substack), add
+ *        "outlet-ital" : false to that clip.
+ *
  * Note that both formats have an outlet, date, link, and set of tags; the difference is just hed/dek vs topic
- * Every clip should be enclosed by curly braces and followed by a comma {}, -- except the last one, which needs no comma
- * The javascript on the page handles turning the topic/hed into a link, parsing the date, etc
+ * 
+
  */
 
 // current tags – this is set up as a list of dictionaries to allow abbreviation of the longer tags
@@ -38,6 +90,22 @@ const tags = [
 ]
 
 var clips = [
+    {
+        "hed" : "Why the Trump administration loves the stupidest renewable energy",
+        "dek" : "America’s biofuel policy is helping destroy the world’s rainforests",
+        "outlet" : "Vox",
+        "date" : "2026-07-14",
+        "link" : "https://www.vox.com/future-perfect/495217/biofuels-renewable-fuel-standard-trump-deforestation",
+        "tags" : "environment, policy"
+    },
+    {
+        "hed" : "Leather is not an innocent byproduct of the meat industry",
+        "dek" : "Your leather purse might put out as much carbon as 35 hamburgers. But the alternative doesn’t have to be junky pleather!",
+        "outlet" : "Vox",
+        "date" : "2026-07-08",
+        "link" : "https://www.vox.com/future-perfect/494511/leather-carbon-emissions-vegan-meta-analysis",
+        "tags" : "science, environment, ffaar"
+    },
     {
         "hed" : "The evidence against “ultra-processed” foods is weaker than you think",
         "dek" : "New analysis suggests other factors may explain the harms blamed on “ultra-processing.”",
@@ -114,6 +182,7 @@ var clips = [
         "hed" : "The medium is the message, & many other thoughts on the mass rescue of beagles from Ridglan Farms",
         "dek" : "I was there. You know I couldn’t not write about this!",
         "outlet" : "Substack",
+        "outlet-ital" : false,
         "date" : "2026-03-22",
         "link" : "https://mbolotnikova.substack.com/p/ridglan-mass-rescue-beagles-wisconsin-research",
         "tags" : "ffaar, science, tech"
@@ -640,7 +709,7 @@ var clips = [
     },
     {
         "dek" : "in which a German-American scholar discovers that his grandfather was a Nazi.",
-        "topic" : "Martin Puchner’s *The Language of Thieves*,",
+        "topic" : "Martin Puchner’s <i>The Language of Thieves</i>,",
         "outlet" : "Harvard Magazine",
         "date" : "2020-11",
         "link" : "https://harvardmagazine.com/2020/11/montage-family-history",
@@ -688,7 +757,7 @@ var clips = [
     },
     {
         "dek" : "and encountering factory farming in literature.",
-        "topic" : "Jean-Baptiste Del Amo's *Animalia*",
+        "topic" : "Jean-Baptiste Del Amo's <i>Animalia</i>",
         "outlet" : "Pittsburgh Post-Gazette",
         "date" : "2020-02",
         "link" : "https://www.post-gazette.com/ae/books/2020/02/09/Animalia-Jean-Baptiste-Del-Amo-factory-farms/stories/201911030003",
@@ -704,7 +773,7 @@ var clips = [
     },
     {
         "dek" : "and how factory farming has remade life on Earth.",
-        "topic" : "Jonathan Safran Foer's *We Are the Weather*",
+        "topic" : "Jonathan Safran Foer's <i>We Are the Weather</i>",
         "outlet" : "Pittsburgh Post-Gazette",
         "date" : "2019-11",
         "link" : "https://www.post-gazette.com/ae/books/2019/11/17/Jonathan-Safran-Foer-We-Are-the-Weather-Saving-Planet-Begins-at-Breakfast/stories/201911170009",
@@ -749,7 +818,7 @@ var clips = [
     },
     {
         "dek" : "a new history of the women's suffrage movement.",
-        "topic" : "Susan Ware’s *Why they Marched*,",
+        "topic" : "Susan Ware’s <i>Why they Marched</i>,",
         "outlet" : "Harvard Magazine",
         "date" : "2019-05",
         "link" : "https://www.harvardmagazine.com/2019/05/suffrage-movement-activism",
@@ -773,7 +842,7 @@ var clips = [
     },
     {
         "dek" : "and what’s wrong with Jewish-American literature.",
-        "topic" : "Dara Horn’s *Eternal Life*",
+        "topic" : "Dara Horn’s <i>Eternal Life</i>",
         "outlet" : "Harvard Magazine",
         "date" : "2018-01",
         "link" : "https://harvardmagazine.com/2018/01/dara-horn-eternal-life",
@@ -781,14 +850,14 @@ var clips = [
     },
     {
         "dek" : "and the kinds of arguments linguists make.",
-        "topic" : "*The Story of Hebrew*,",
+        "topic" : "<i>The Story of Hebrew</i>,",
         "outlet" : "The Forward",
         "date" : "2017-08",
         "link" : "https://forward.com/culture/378315/how-hebrew-has-managed-to-survive/",
         "tags" : "ideas, books"
     },
     {
-        "topic" : "the unfortunate Netflix series *Friends from College*.",
+        "topic" : "the unfortunate Netflix series <i>Friends from College</i>.",
         "outlet" : "Harvard Magazine",
         "date" : "2017-07",
         "link" : "https://www.harvardmagazine.com/2017/07/friends-from-college-netflix",
