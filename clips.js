@@ -317,7 +317,7 @@ var clips = [
     },
     {
         "hed" : "The life of a dairy cow",
-        "dek" : "The surprising truth about milk is hiding in plain sight (comic illustrated by the wonderful Christine Mi)",
+        "dek" : "The surprising truth about milk is hiding in plain sight (comic illustrated by the brilliant Cat Willet)",
         "outlet" : "Vox",
         "date" : "2025-04",
         "link" : "https://www.vox.com/future-perfect/403444/dairy-industry-cow-life-milk-america",
@@ -397,7 +397,7 @@ var clips = [
     },
     {
         "hed" : "I gave up meat and gained so much more",
-        "dek" : "The delightful abundance of going vegan (illustrated by Christine Mi).",
+        "dek" : "The delightful abundance of going vegan (comic illustrated by the wonderful Christine Mi).",
         "outlet" : "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/climate/24131229/vegan-vegetarian-meatless-climate-solutions-recipes-connection",
