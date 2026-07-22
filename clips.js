@@ -592,7 +592,7 @@ var clips = [
         "dek" : "NYC is set to ban foie gras, a food that's been called “the Abu Ghraib of poultry dishes.” Is it really any worse than factory farmed meat?",
         "outlet" : "Grid",
         "date" : "2022-06",
-        "link" : "files/grid-foie-gras.pdf",
+        "link" : "assets/files/grid-foie-gras.pdf",
         "tags" : "ffaar, policy"
     },
     {
