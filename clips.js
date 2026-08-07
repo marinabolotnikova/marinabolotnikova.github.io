@@ -91,6 +91,14 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "The truth about rent control",
+        "dek" : "We keep coming back to this one strategy. Renters deserve better.",
+        "outlet" : "Vox",
+        "date" : "2026-08-05",
+        "link" : "https://www.vox.com/the-highlight/497283/rent-control-mamdani-freeze",
+        "tags" : "urbanism, policy"
+    },
+    {
         "hed" : "Why the Trump administration loves the stupidest renewable energy",
         "dek" : "America’s biofuel policy is helping destroy the world’s rainforests",
         "outlet" : "Vox",
