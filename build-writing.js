@@ -24,8 +24,8 @@ const { clips } = new Function(clipsSrc + "; return { tags, clips };")();
 
 clips.sort(render.clip_sort);
 
-// featured section: same clips show_featured() would render
-const featuredHtml = clips.filter(render.is_featured).map(render.clip_li_html).join("\n  ");
+// featured section: the same image boxes show_featured() would render, wide-screen and narrow-screen
+const featuredHtml = render.featured_boxes_html(clips.filter(render.is_featured));
 
 // results section: ALL non-featured clips (not just the first 20), grouped by year
 const all = render.filter_by_tag(clips, "all");
@@ -51,12 +51,17 @@ const taglistHtml = years.map(y => '<a href="#y' + y + '">' + y + "</a>").join("
 /* Splice generated content into writing.html between marker comments like
  * <!-- baked:results:start --> ... <!-- baked:results:end -->.
  * On the first run (no markers yet) it matches the bare element by its id
- * and writes the markers, so every later run is fully deterministic. */
+ * and writes the markers, so every later run is fully deterministic. Sections
+ * that generate their own container elements pass a null openTag, since there's
+ * no pre-existing element to match -- for those the markers are required. */
 function splice(html, name, openTag, closeTag, content) {
   const marked = "<!-- baked:" + name + ":start -->\n  " + content + "\n  <!-- baked:" + name + ":end -->";
   const markerRe = new RegExp("<!-- baked:" + name + ":start -->[\\s\\S]*?<!-- baked:" + name + ":end -->");
   if (markerRe.test(html)) {
     return html.replace(markerRe, () => marked);
+  }
+  if (openTag === null) {
+    throw new Error("build-writing.js: writing.html is missing the <!-- baked:" + name + ":start/end --> markers");
   }
   const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const elementRe = new RegExp("(" + esc(openTag) + ")[\\s\\S]*?(" + esc(closeTag) + ")");
@@ -67,7 +72,7 @@ function splice(html, name, openTag, closeTag, content) {
 }
 
 let html = fs.readFileSync(writingPath, "utf8");
-html = splice(html, "featured", '<ul id="featured-stories">', "</ul>", featuredHtml);
+html = splice(html, "featured", null, null, featuredHtml);
 html = splice(html, "taglist", '<span role="tablist" id="taglist">', "</span>", taglistHtml);
 html = splice(html, "results", '<div style="padding-bottom:20px" id="results">', "</div>", resultsHtml);
 

@@ -70,7 +70,15 @@
  *        "outlet-ital" : false to that clip.
  *
  * Note that both formats have an outlet, date, link, and set of tags; the difference is just hed/dek vs topic
- * 
+ *
+ * IMAGES
+ * A clip tagged "featured" shows up in the image grid at the top of the writing page. Give those clips an
+ * "image" entry pointing at a picture in the assets folder, like this:
+ *      "image" : "assets/featured/2026-04-Ridglan.jpg",
+ * The path is relative to the top level of the site (the folder writing.html lives in). Featured clips
+ * without an "image" still show their hed and dek, just with no picture above them. The "image" entry is
+ * ignored for clips that aren't featured.
+ *
 
  */
 
@@ -155,12 +163,13 @@ var clips = [
         "tags" : "urbanism, environment, policy"
     },
     { 
-        "hed" : "The battle over rescuing 2,000 beagles from lab research is not over.",
+        "hed" : "How 2,000 beagles set the animal rights movement on fire",
         "dek" : "A viral campaign to rescue beagles used for experiments is part of a much bigger fight.",
         "outlet" : "Vox",
         "date" : "2026-04-29",
         "link" : "https://www.vox.com/future-perfect/486973/beagle-rescue-ridglan-animal-testing-research-rights",
-        "tags" : "ffaar, science, featured"    
+        "image" : "assets/featured/2026-04-Ridglan.jpg",
+        "tags" : "ffaar, science, featured"
     },
     { 
         "hed" : "The surprising reason why pedestrian deaths are down in the US",
@@ -329,6 +338,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2025-04",
         "link" : "https://www.vox.com/future-perfect/403444/dairy-industry-cow-life-milk-america",
+        "image" : "assets/featured/2025-04-Dairy-Cow.jpg",
         "tags" : "ffaar, featured"
     },
     {
@@ -353,6 +363,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-12",
         "link" : "https://www.vox.com/future-perfect/391795/ultra-processed-foods-science-vegan-meat-rfk-maha",
+        "image" : "assets/featured/2024-12-UPFs.jpg",
         "tags" : "science, meat-less, culture, policy, featured"
     },
     {
@@ -409,6 +420,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2024-04",
         "link" : "https://www.vox.com/climate/24131229/vegan-vegetarian-meatless-climate-solutions-recipes-connection",
+        "image" : "assets/featured/2024-04-Vegan.jpg",
         "tags" : "meat-less, culture, ideas, featured"
     },
     {
@@ -473,6 +485,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-08",
         "link" : "https://www.vox.com/the-highlight/23777171/ai-animals-rights-cruelty-transhumanism-bostrom",
+        "image" : "assets/featured/2023-09-AI.jpg",
         "tags" : "tech, ffaar, science, ideas, books, featured"
     },
     {
@@ -529,6 +542,7 @@ var clips = [
         "outlet" : "Vox",
         "date" : "2023-01",
         "link" : "https://www.vox.com/future-perfect/23516639/veterinarians-avma-factory-farming-ventilation-shutdown",
+        "image" : "assets/featured/2023-01-Vets.jpg",
         "tags" : "ffaar, science, featured"
     },
     {

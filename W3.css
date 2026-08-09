@@ -325,7 +325,7 @@ p, ul, li, h2, h3, h4, html, body {
     font-family: "Nunito Sans", verdana, sans-serif;
     font-weight: 600;
     font-size: 19px;
-    line-height: 26px;
+    line-height: 1.6;
     color: rgb(77, 77, 77);
 }
 
@@ -431,4 +431,96 @@ button[role="tab"][aria-selected="true"] {
 /* Ensure unselected tabs don't have underline */
 button[role="tab"][aria-selected="false"] {
   text-decoration: none!important;
+}
+
+#f-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.f-cell {
+  padding: 4px;
+  width: 49%;
+  position: relative;
+  display: inline-block;
+}
+
+.f-hed, .f-dek { 
+  background-color: rgba(255,255,255,0.66);
+  left: 0px; 
+  right: 0px; 
+  padding-left: 8px; 
+  padding-right: 8px;
+  text-align: center;
+  position: absolute;
+  height: fit-content;
+  color: black !important;
+  line-height: 1.3 !important; 
+}
+
+.f-hed { 
+  bottom: 4px;
+  margin-bottom:0;
+  font-family: "Museo 700", Helvetica, sans-serif;
+  min-height: 54px; 
+  place-items: center;
+  display: grid;
+}
+
+.f-dek { 
+  top: 4px;
+  font-size: 80%;
+  margin-top:0;
+  visibility: hidden;
+}
+
+.f-img { 
+  width: 100% !important;
+  display: block;
+}
+
+.f-cell:hover .f-dek { 
+  visibility: visible;
+}
+
+.f-cell:hover .f-dek, 
+.f-cell:hover .f-hed { 
+  background-color:  rgba(255,255,255,0.9);
+}
+
+.m-img { 
+  width: 100%;
+  padding-top: 0px;
+  border-radius: 8px;
+}
+
+.m-cell { 
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  border-radius: 8px;
+  margin-bottom: 8px; 
+}
+
+.m-dek, .m-hed {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.m-hed { 
+  font-family: "Museo 700", Helvetica, sans-serif; 
+  font-size: 90%;
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+.m-dek { 
+  font-size: 70%;
+  margin-top: 0;
+}
+
+#m-box a {
+  text-decoration-color: lightgray !important; 
 }

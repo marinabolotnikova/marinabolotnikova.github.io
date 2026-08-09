@@ -41,6 +41,17 @@ function filter_by_tag(clips, tag) {
   return clips.filter(clip => !is_featured(clip) && (tag === "all" || clip_tags(clip).includes(tag)));
 }
 
+// the dek (if there is one) followed by the outlet and date, e.g.
+// "<span>Some dek.</span> <i>Vox</i>, April 2026" -- shared by the list and featured renderings
+function clip_meta_html(clip) {
+  let html = "";
+  if (clip.dek != undefined) { html += "<span>" + clip.dek + "</span> "; }
+  let outlet_tag = (clip["outlet-ital"] === false || clip["outlet-ital"] === "false") ? "span" : "i";
+  html += "<" + outlet_tag + ">" + clip.outlet + "</" + outlet_tag + ">";
+  html += ", " + get_month(clip.date.substr(5)) + " " + clip.date.substr(0, 4);
+  return html;
+}
+
 // the single source of truth for how one clip renders as a list item
 function clip_li_html(clip) {
   let html = "<li>";
@@ -50,13 +61,30 @@ function clip_li_html(clip) {
   else {
     html += '<a href="' + clip.link + '" target="_blank">' + strip_links(clip.hed) + "</a> •";
   }
-  if (clip.dek == undefined) { html += " "; }
-  else { html += " <span>" + clip.dek + "</span> "; }
-  let outlet_tag = (clip["outlet-ital"] === false || clip["outlet-ital"] === "false") ? "span" : "i";
-  html += "<" + outlet_tag + ">" + clip.outlet + "</" + outlet_tag + ">";
-  html += ", " + get_month(clip.date.substr(5)) + " " + clip.date.substr(0, 4);
-  html += "</li>";
+  html += " " + clip_meta_html(clip) + "</li>";
   return html;
+}
+
+// one featured story as an image cell. `prefix` is "f" for the wide-screen grid or "m" for the
+// narrow-screen stack; the two share their content and differ only in markup and css classes.
+function featured_cell_html(clip, prefix) {
+  const title = strip_links(clip.hed == undefined ? clip.topic : clip.hed);
+  let inner = "";
+  // a featured clip with no "image" still gets a cell, just without a picture
+  if (clip.image) { inner += '\n      <img class="' + prefix + '-img" src="' + clip.image + '" alt="">'; }
+  inner += '\n      <p class="' + prefix + '-hed">' + title + "</p>";
+  inner += '\n      <p class="' + prefix + '-dek">' + clip_meta_html(clip) + "</p>\n    ";
+  const link_class = (prefix === "f") ? ' class="f-cell"' : "";
+  const link = "<a" + link_class + ' href="' + clip.link + '" target="_blank">' + inner + "</a>";
+  return (prefix === "f") ? link : '<div class="m-cell">\n    ' + link + "\n    </div>";
+}
+
+// both featured boxes: an image grid for wide screens and a stack of cards for narrow ones.
+// both are always filled in, so switching between them is purely a matter of css.
+function featured_boxes_html(featured) {
+  const cells = prefix => featured.map(clip => featured_cell_html(clip, prefix)).join("\n    ");
+  return '<div id="f-box" class="w3-hide-small">\n    ' + cells("f") + "\n  </div>\n  "
+    + '<div id="m-box" class="w3-hide-medium w3-hide-large">\n    ' + cells("m") + "\n  </div>";
 }
 
 // year header with an anchor id, so links like #y2026 can jump to it
@@ -66,5 +94,6 @@ function year_header_html(year) {
 
 // lets build-writing.js load this file with require(); browsers ignore this
 if (typeof module !== "undefined") {
-  module.exports = { month, get_month, clip_sort, strip_links, clip_tags, is_featured, filter_by_tag, clip_li_html, year_header_html };
+  module.exports = { month, get_month, clip_sort, strip_links, clip_tags, is_featured, filter_by_tag,
+    clip_meta_html, clip_li_html, featured_cell_html, featured_boxes_html, year_header_html };
 }
