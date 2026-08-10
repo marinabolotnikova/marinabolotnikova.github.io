@@ -99,6 +99,14 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "A new housing politics is taking shape on the left",
+        "dek" : "Can democratic socialist Nithya Raman make Los Angeles build?",
+        "outlet" : "Vox",
+        "date" : "2026-08-10",
+        "link" : "https://www.vox.com/future-perfect/498445/nithya-raman-la-mayor-housing-crisis-yimby",
+        "tags" : "urbanism, policy"
+    },
+    {
         "hed" : "The truth about rent control",
         "dek" : "We keep coming back to this one strategy. Renters deserve better.",
         "outlet" : "Vox",

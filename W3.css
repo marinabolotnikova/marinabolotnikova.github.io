@@ -457,14 +457,16 @@ button[role="tab"][aria-selected="false"] {
   position: absolute;
   height: fit-content;
   color: black !important;
-  line-height: 1.3 !important; 
+  --f-line-height: 1.3;
+  line-height: var(--f-line-height) !important;
 }
 
-.f-hed { 
+.f-hed {
   bottom: 4px;
   margin-bottom:0;
   font-family: "Museo 700", Helvetica, sans-serif;
-  min-height: 54px; 
+  /* tall enough for two lines of hed plus 4px */
+  min-height: calc(2 * var(--f-line-height) * 1em + 4px);
   place-items: center;
   display: grid;
 }
@@ -476,7 +478,14 @@ button[role="tab"][aria-selected="false"] {
   visibility: hidden;
 }
 
-.f-img { 
+/* Featured images are cropped to a uniform 16:9  */
+.f-img, .m-img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.f-img {
   width: 100% !important;
   display: block;
 }
