@@ -438,11 +438,14 @@ button[role="tab"][aria-selected="false"] {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  /* gap between cells */
+  gap: 8px;
+  align-items: flex-start;
 }
 
 .f-cell {
-  padding: 4px;
-  width: 49%;
+  /* -5px, not the -4px that would exactly fill the row with rounding */
+  width: calc(50% - 5px);
   position: relative;
   display: inline-block;
 }
@@ -461,7 +464,8 @@ button[role="tab"][aria-selected="false"] {
 }
 
 .f-hed {
-  bottom: 4px;
+  bottom: -1px;
+  padding-bottom: 1px;
   margin-bottom:0;
   font-family: "Museo 700", Helvetica, sans-serif;
   /* tall enough for two lines of hed plus 4px */
@@ -471,7 +475,8 @@ button[role="tab"][aria-selected="false"] {
 }
 
 .f-dek { 
-  top: 4px;
+  top: -1px;
+  padding-top: 1px;
   font-size: 80%;
   margin-top:0;
   visibility: hidden;
