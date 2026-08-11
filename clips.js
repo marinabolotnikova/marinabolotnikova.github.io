@@ -99,6 +99,14 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "Everyone needsa personal AI policy. Just ask Hank Green.",
+        "dek" : "How can we reap AI’s benefits without melting our brains in the process?",
+        "outlet" : "Vox",
+        "date" : "2026-08-11",
+        "link" : "https://www.vox.com/future-perfect/498851/hank-green-ai-controversy-research",
+        "tags" : "tech, ideas"
+    },
+    {
         "hed" : "A new housing politics is taking shape on the left",
         "dek" : "Can democratic socialist Nithya Raman make Los Angeles build?",
         "outlet" : "Vox",
