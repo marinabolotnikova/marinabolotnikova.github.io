@@ -99,7 +99,15 @@ const tags = [
 
 var clips = [
     {
-        "hed" : "Everyone needsa personal AI policy. Just ask Hank Green.",
+        "hed" : "Cage-free eggs are worse for the climate. Does it matter?",
+        "dek" : "Here’s what to consider instead.",
+        "outlet" : "Vox",
+        "date" : "2026-08-24",
+        "link" : "https://www.vox.com/future-perfect/500005/cage-free-eggs-cruelty-climate-reductionism",
+        "tags" : "ffaar, evironment, meat-less"
+    },
+    {
+        "hed" : "Everyone needs a personal AI policy. Just ask Hank Green.",
         "dek" : "How can we reap AI’s benefits without melting our brains in the process?",
         "outlet" : "Vox",
         "date" : "2026-08-11",
