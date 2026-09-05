@@ -99,6 +99,15 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "YIMBYism meets its biggest challenge yet: A wildfire",
+        "dek" : "Wildfires leveled thousands of homes in California. Now the state could block even more from being built.",
+        "outlet" : "Vox",
+        "date" : "2026-08-28",
+        "link" : "https://www.vox.com/future-perfect/501049/california-fire-rebuilding-altadena-sb-1090",
+        "tags" : "environment, policy, urbanism"
+ 
+    },
+    {
         "hed" : "Cage-free eggs are worse for the climate. Does it matter?",
         "dek" : "Here’s what to consider instead.",
         "outlet" : "Vox",
