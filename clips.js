@@ -99,6 +99,41 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "The astonishing gap between America’s fastest- and slowest-building cities",
+        "dek" : "It shouldn’t take five years to build an apartment building.",
+        "outlet" : "Vox",
+        "date" : "2026-09-30",
+        "link" : "https://www.vox.com/future-perfect/504552/housing-apartments-permitting-research",
+        "tags" : "policy, urbanism"
+ 
+    },
+        {
+        "hed" : "Where did all the vegan restaurants go?",
+        "dek" : "And what does it mean for the plant-based movement?",
+        "outlet" : "Vox",
+        "date" : "2026-09-29",
+        "link" : "https://www.vox.com/the-highlight/503739/vegan-restaurants-closing-animal-rights",
+        "tags" : "ffaar, culture, meat-less"
+    },
+    {
+        "hed" : "The people who fear AI are wasting time fighting each other",
+        "dek" : "The AI risk debate has become pointlessly tribal. There’s a way out.",
+        "outlet" : "Vox",
+        "date" : "2026-09-15",
+        "link" : "https://www.vox.com/future-perfect/502856/ai-safety-risk-garrison-lovely-obsolete",
+        "tags" : "policy, tech"
+ 
+    },
+        {
+        "hed" : "America is built for driving. There’s hidden demand for something better.",
+        "dek" : "What can we learn from the European cities Americans love to visit?",
+        "outlet" : "Vox",
+        "date" : "2026-09-09",
+        "link" : "https://www.vox.com/future-perfect/502209/america-cities-walkability-surveys",
+        "tags" : "policy, urbanism"
+ 
+    },
+    {
         "hed" : "YIMBYism meets its biggest challenge yet: A wildfire",
         "dek" : "Wildfires leveled thousands of homes in California. Now the state could block even more from being built.",
         "outlet" : "Vox",
