@@ -99,6 +99,29 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "A truck full of cows crashed in Kansas City. It reveals a bigger everyday horror.",
+        "dek" : "Our relentless appetite for meat puts animals through grueling journeys.",
+        "date" : "2026-10-24", 
+        "link" : "https://www.vox.com/future-perfect/507513/kansas-city-cattle-truck-crash-livestock-transport",
+        "tags" : "ffaar, culture"
+    },
+    {
+        "hed" : "Where did all the vegan restaurants go?",
+        "dek" : "And what does it mean for the plant-based movement?",
+        "outlet" : "Vox", 
+        "date" : "2026-10-20",
+        "link" : "https://www.vox.com/the-highlight/503739/vegan-restaurants-closing-animal-rights",
+        "tags" : "ffaar, meat-less, culture"
+    },
+    {
+        "hed" : "There’s a silver lining to your unhappiness",
+        "dek" : "Economist George Loewenstein’s new book is emphatically not self-help. It might still help you live a wiser life.",
+        "outlet" : "Vox",
+        "date" : "2026-10-07",
+        "link" : "https://www.vox.com/future-perfect/505391/opposite-of-happiness-loewenstein",
+        "tags" : "culture, ideas, books"
+    },
+    {
         "hed" : "The astonishing gap between America’s fastest- and slowest-building cities",
         "dek" : "It shouldn’t take five years to build an apartment building.",
         "outlet" : "Vox",
