@@ -103,6 +103,7 @@ var clips = [
         "dek" : "Our relentless appetite for meat puts animals through grueling journeys.",
         "date" : "2026-10-24", 
         "link" : "https://www.vox.com/future-perfect/507513/kansas-city-cattle-truck-crash-livestock-transport",
+        "outlet" : "Vox",
         "tags" : "ffaar, culture"
     },
     {
