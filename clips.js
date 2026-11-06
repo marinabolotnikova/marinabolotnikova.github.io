@@ -99,6 +99,14 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "Los Angeles is about to test a new kind of housing politics",
+        "dek" : "The city ousts its NIMBY mayor for a democratic socialist YIMBY.",
+        "date" : "2026-11-06",
+        "link" : "https://www.vox.com/future-perfect/509736/los-angeles-nithya-raman-karen-bass-housing",
+        "outlet" : "Vox",
+        "tags" : "urbanism, policy"
+    },
+    {
         "hed" : "Sweden builds houses and apartments like Lego sets. Why don't we?",
         "dek" : "Zara Larsson isn't the only Swedish export America should be obsessed with.",
         "date" : "2026-11-06",
