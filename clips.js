@@ -99,6 +99,14 @@ const tags = [
 
 var clips = [
     {
+        "hed" : "Sweden builds houses and apartments like Lego sets. Why don't we?",
+        "dek" : "Zara Larsson isn't the only Swedish export America should be obsessed with.",
+        "date" : "2026-11-06",
+        "link" : "https://www.vox.com/future-perfect/509022/sweden-prefabricated-housing-affordability",
+        "outlet" : "Vox",
+        "tags" : "urbanism, policy"
+    },
+    {
         "hed" : "A truck full of cows crashed in Kansas City. It reveals a bigger everyday horror.",
         "dek" : "Our relentless appetite for meat puts animals through grueling journeys.",
         "date" : "2026-10-24", 
